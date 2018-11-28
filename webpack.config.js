@@ -16,9 +16,9 @@ const config = {
     rules : [
       // JavaScript/JSX Files
       {
-        test: /\.jsx$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader', 'eslint-loader'],
       },
       // CSS Files
       {

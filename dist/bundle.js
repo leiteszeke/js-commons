@@ -95,9 +95,11 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-class i18n {
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-}
+var i18n = function i18n() {
+  _classCallCheck(this, i18n);
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (i18n);
 
@@ -114,9 +116,8 @@ class i18n {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./i18n */ "./src/i18n/index.js");
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-    i18n: _i18n__WEBPACK_IMPORTED_MODULE_0__["default"]
+  i18n: _i18n__WEBPACK_IMPORTED_MODULE_0__["default"]
 });
 
 /***/ })
