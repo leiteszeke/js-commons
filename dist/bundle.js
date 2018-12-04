@@ -86,6 +86,81 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/dom/index.js":
+/*!**************************!*\
+  !*** ./src/dom/index.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Dom =
+/*#__PURE__*/
+function () {
+  function Dom() {
+    _classCallCheck(this, Dom);
+  }
+
+  _createClass(Dom, [{
+    key: "nodeInParent",
+
+    /**
+     * Checks wheter an element has a given parent.
+     *
+     * @param element (target element)
+     * @param value (value of class, id, dataAttribute.. to compare)
+     * @param type (by default is most common use case class, can be passed id, data-attrName)
+     *
+     * @return bool
+     */
+    value: function nodeInParent(elem, value) {
+      var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'class';
+
+      if (typeof elem.classList === 'undefined' || elem.classList.contains('content') || elem.tagName === 'BODY') {
+        return false;
+      }
+
+      var dataAttr = type.substring(5);
+
+      switch (type) {
+        case 'class':
+          if (typeof elem.classList === 'undefined' || false === elem.classList.contains(value)) {
+            return this.nodeInParent(elem.parentNode, value, type);
+          }
+
+          break;
+
+        case 'id':
+          if (value !== elem.id) {
+            return this.nodeInParent(elem.parentNode, value, type);
+          }
+
+          break;
+
+        case /data(-\w+)/.test(type):
+          if (value !== elem.dataset[dataAttr]) {
+            return this.nodeInParent(elem.parentNode, value, type);
+          }
+
+          break;
+      }
+
+      return true;
+    }
+  }]);
+
+  return Dom;
+}();
+
+module.exports = Dom;
+
+/***/ }),
+
 /***/ "./src/i18n/index.js":
 /*!***************************!*\
   !*** ./src/i18n/index.js ***!
@@ -115,10 +190,15 @@ var i18n = function i18n() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./i18n */ "./src/i18n/index.js");
+/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dom */ "./src/dom/index.js");
+/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dom__WEBPACK_IMPORTED_MODULE_1__);
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-  i18n: _i18n__WEBPACK_IMPORTED_MODULE_0__["default"]
-});
+
+var commons = {
+  i18n: _i18n__WEBPACK_IMPORTED_MODULE_0__["default"],
+  dom: new _dom__WEBPACK_IMPORTED_MODULE_1___default.a()
+};
+/* harmony default export */ __webpack_exports__["default"] = (commons);
 
 /***/ })
 
