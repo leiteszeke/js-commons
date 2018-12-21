@@ -1,4 +1,4 @@
-const commons = require('./dist/bundle');
+const commons = require('./dist');
 
 module.exports = commons;
 module.exports.default = commons;

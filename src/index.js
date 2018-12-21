@@ -1,9 +1,13 @@
-import i18n from './i18n';
+import Browser from './browser';
 import Dom from './dom';
+import i18n from './i18n';
+import Utils from './utils';
 
 const commons = {
+    browser: new Browser(),
+    dom: new Dom(),
     i18n,
-    dom: new Dom()
+    utils: new Utils(),
 };
 
 export default commons;

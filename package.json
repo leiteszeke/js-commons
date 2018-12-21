@@ -1,8 +1,8 @@
 {
   "name": "@extendeal/ext-commons",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Libreria de funciones genericas para utilizar en diferentes proyectos.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "bundle": "webpack",
     "bundle-watch": "webpack -w",
