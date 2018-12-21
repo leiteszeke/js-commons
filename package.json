@@ -1,11 +1,12 @@
 {
   "name": "@extendeal/ext-commons",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Libreria de funciones genericas para utilizar en diferentes proyectos.",
   "main": "dist/index.js",
   "scripts": {
     "bundle": "webpack",
     "bundle-watch": "webpack -w",
+    "build-prod": "webpack -p",
     "lint": "./node_modules/.bin/eslint ./src"
   },
   "repository": {

@@ -8,7 +8,7 @@ class Browser {
     }
 
     isDesktop() {
-        return !isMobile() && !isTablet();
+        return !this.isMobile() && !this.isTablet();
     }
 
     currentDisplayName() {
