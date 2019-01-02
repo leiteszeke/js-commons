@@ -1,6 +1,6 @@
 {
   "name": "@extendeal/ext-commons",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Libreria de funciones genericas para utilizar en diferentes proyectos.",
   "main": "build/index.js",
   "scripts": {
@@ -29,7 +29,11 @@
     "source-map": "^0.7.3",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "@sentry/browser": "^4.2.3"
+  },
+  "peerDependencies": {
+    "@sentry/browser": "^4.2.3"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
