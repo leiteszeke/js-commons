@@ -6,15 +6,27 @@ const { extend } = require('../objects');
 let localeObject = {};
 let language;
 
+const langFiles = {
+    es: require('./locales/es.json'),
+    en: require('./locales/es.json'),
+    pt: require('./locales/pt.json'),
+};
+
+const localeFiles = {
+    en_US: require('./locales/en_US.json'),
+    es_AR: require('./locales/es_AR.json'),
+    es_CL: require('./locales/es_CL.json'),
+    es_MX: require('./locales/es_MX.json'),
+    es_UY: require('./locales/es_UY.json'),
+    pt_BR: require('./locales/pt_BR.json'),
+};
+
 module.exports = {
     getInstance() {
         const locale = this.getLocale();
         const language = (locale.split("_"))[0];
 
-        const original = require(`./locales/${ language }.json`);
-        const instance = require(`./locales/${ locale }.json`);
-
-        localeObject = extend(true, original, instance);
+        localeObject = extend(true, langFiles[language], localeFiles[locale]);
     },
 
     setLanguage(lang) {
