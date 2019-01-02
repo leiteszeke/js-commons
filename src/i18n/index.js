@@ -1,5 +1,3 @@
-class i18n {
+module.exports = {
 
-}
-
-export default i18n;
+};

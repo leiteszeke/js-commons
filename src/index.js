@@ -1,13 +1,11 @@
-import Browser from './browser';
-import Dom from './dom';
-import i18n from './i18n';
-import Utils from './utils';
+const browser = require('./browser');
+const dom = require('./dom');
+const i18n = require('./i18n');
+const utils = require('./utils');
 
-const commons = {
-    browser: new Browser(),
-    dom: new Dom(),
+module.exports = {
+    browser,
+    dom,
     i18n,
-    utils: new Utils(),
+    utils,
 };
-
-export default commons;

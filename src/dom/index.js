@@ -1,4 +1,4 @@
-class Dom {
+module.exports = {
     /**
      * Checks wheter an element has a given parent.
      *
@@ -37,6 +37,4 @@ class Dom {
 
         return true;
     }
-}
-
-module.exports = Dom;
+};

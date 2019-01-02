@@ -1,42 +1,35 @@
-// Imports: Dependencies
-const path = require('path');
-require("babel-register");
-// Webpack Configuration
-const config = {
-  mode: 'development',
-  // Entry
-  entry: './src/index.js',
-  // Output
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'index.js',
-  },
-  // Loaders
-  module: {
-    rules : [
-      // JavaScript/JSX Files
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
-      },
-      // CSS Files
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.scss$/,
-        use: ['style-loader', 'sass-loader']
-      }
-    ]
-  },
+var path = require('path')
 
-  // OPTIONAL
-  // Reload On File Change
-  watch: true,
-  // Development Tools (Map Errors To Source File)
-  devtool: 'source-map',
-};
-// Exports
-module.exports = config;
+const PATHS = {
+	src: path.join(__dirname, './src'),
+	build: path.join(__dirname, './build')
+}
+
+module.exports = {
+	mode: 'development',
+	entry: {
+		'common': PATHS.src + '/index.js'
+	},
+	output: {
+		path: PATHS.build,
+		filename: 'index.js',
+		library: 'ExtCommons',
+		libraryTarget: 'umd'
+	},
+	devtool: 'source-map',
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				use: [
+					{ loader: "babel-loader" },
+					{ loader: 'eslint-loader' },
+				],
+				exclude: /demo/
+			},
+		]
+	},
+	resolve: {
+		extensions: ['.js']
+	},
+}
