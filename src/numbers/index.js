@@ -5,17 +5,6 @@ let listeners = {
     'maskFloat': []
 };
 
-numeral.register('locale', 'default', {
-    delimiters: {
-        thousands: i18n.translate('format.money.thousands_separator'),
-        decimal: i18n.translate('format.money.decimals_separator')
-    },
-    abbreviations: {},
-    currency: {
-        symbol: i18n.translate('format.money.currency')
-    }
-});
-
 module.exports = {
     getPatterns() {
         let patterns = {};
@@ -63,8 +52,24 @@ module.exports = {
      * @return {boolean} - whether it was possible to format input or not
      */
     mask(input, { mask, decimals = 3 } = {}, value) {
-        typeof value == 'undefined' && (value = input.value);
-        typeof mask == 'undefined' && (mask = `0,0[.]0[${'0'.repeat(decimals - 1)}]`);
+        typeof value === 'undefined' && (value = input.value);
+        typeof mask === 'undefined' && (mask = `0,0[.]0[${'0'.repeat(decimals - 1)}]`);
+
+        if (typeof numeral.locales['default'] === 'undefined') {
+            numeral.register('locale', 'default', {
+                delimiters: {
+                    thousands: i18n.translate('format.money.thousands_separator'),
+                    decimal: i18n.translate('format.money.decimals_separator'),
+                },
+                abbreviations: {},
+                currency: {
+                    symbol: i18n.translate('format.money.currency')
+                }
+            });
+        }
+
+        numeral.locale('default');
+
         value = numeral(value).value();
 
         if ( !isNaN(value) ) {
@@ -170,8 +175,8 @@ module.exports = {
         listeners['maskFloat'].push({ 'input': input, 'evt': 'change', 'fn': changeListener });
     },
 
-    demaskFloat() {
-
+    demaskFloat(value) {
+        return numeral(value).value();
     },
 
     formatNumber() {

@@ -8,7 +8,7 @@ let language;
 
 const langFiles = {
     es: require('./locales/es.json'),
-    en: require('./locales/es.json'),
+    en: require('./locales/en.json'),
     pt: require('./locales/pt.json'),
 };
 
