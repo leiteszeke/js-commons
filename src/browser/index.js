@@ -1,45 +1,27 @@
-module.exports = {
-    checkWindow() {
-        return typeof window !== 'undefined';
-    },
-
+const browser = {
     isMobile() {
-        if (this.checkWindow()) {
-            return;
-        }
-
         return window.innerWidth < 640;
     },
 
     isTablet() {
-        if (this.checkWindow()) {
-            return;
-        }
-
         return window.innerWidth >= 640 && window.innerWidth <= 1024;
     },
 
     isDesktop() {
-        if (this.checkWindow()) {
-            return;
-        }
-
-        return !this.isMobile() && !this.isTablet();
+        return !browser.isMobile() && !browser.isTablet();
     },
 
     currentDisplayName() {
-        if (this.checkWindow()) {
-            return;
-        }
-
-        if (this.isMobile()) {
+        if (browser.isMobile()) {
             return 'mobile';
         }
 
-        if (this.isTablet()) {
+        if (browser.isTablet()) {
             return 'tablet';
         }
 
         return 'desktop';
     }
 };
+
+module.exports = browser;

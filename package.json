@@ -1,6 +1,6 @@
 {
   "name": "@extendeal/ext-commons",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Libreria de funciones genericas para utilizar en diferentes proyectos.",
   "main": "build/index.js",
   "scripts": {
