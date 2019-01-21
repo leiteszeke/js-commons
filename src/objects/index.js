@@ -22,7 +22,9 @@ const Objects = {
                     if ( deep && Object.prototype.toString.call(obj[prop]) === '[object Object]' ) {
                         extended[prop] = Objects.extend( true, extended[prop], obj[prop] );
                     } else {
-                        extended[prop] = obj[prop];
+                        if (typeof obj[prop] !== 'undefined') {
+                            extended[prop] = obj[prop];
+                        }
                     }
                 }
             }
