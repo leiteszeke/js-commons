@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 const utils = {
     hexToRgb(hex) {
         // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
@@ -21,7 +23,26 @@ const utils = {
     colorWithOpacity(hex, alpha) {
         const { r, g, b } = utils.hexToRgb(hex);
         return `rgba(${ r }, ${ g }, ${ b }, ${ alpha })`;
-    }
+    },
+
+    download(url, filename, data = {}) {
+        return axios.get(url, {
+            headers: data.headers,
+            params: data.data,
+            responseType: 'blob',
+        })
+            .then(response => {
+                let link = document.createElement('a');
+                link.href = window.URL.createObjectURL(new Blob([response.data]));
+                link.setAttribute('download', filename);
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+
+                return response;
+            });
+
+    },
 };
 
 module.exports = utils;
