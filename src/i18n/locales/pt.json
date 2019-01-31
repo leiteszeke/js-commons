@@ -1,3 +1,2199 @@
 {
-
-}
+    "actions": {
+      "accept": "Aceitar",
+      "apply": "Aplicar",
+      "approve": "Aprovar",
+      "back": "Voltar",
+      "back_to_cart": "Voltar ao passo 1",
+      "cancel": "Cancelar",
+      "change": "Modificar",
+      "close": "Datar",
+      "comment": "Comentar",
+      "confirm": "Confirmar",
+      "continue_anyway": "Continuar de todos modos",
+      "create": "Criar",
+      "delete": "Apagar",
+      "delete_deliveries_with_errors": "Eliminar O.C. con errores para continuar",
+      "delete_to_continue": "Eliminar para continuar",
+      "deny": "Negar",
+      "disapprove": "Desaprovar",
+      "discard": "Descartar",
+      "discard_products": "Descartar Produtos",
+      "do": "Fazer",
+      "down": "Abaixo",
+      "download": "Baixar",
+      "eliminate": "Eliminar",
+      "execute": "Executar",
+      "exit": "Sair",
+      "finish": "Finalizar",
+      "filter": "Filtrar",
+      "first": "Primeiro",
+      "generate": "Gerar",
+      "go_to_summary": "Ir a resumen",
+      "in": "en",
+      "last": "Último",
+      "loading": "Carregando",
+      "new_order": "Nuevo pedido",
+      "next": "Seguinte",
+      "new": "Novo",
+      "no_results": "Não encontramos resultados relacionados à busca.",
+      "ok": "Ok",
+      "open": "Abrir",
+      "prev": "Ant.",
+      "previous": "Anterior",
+      "redo": "Refazer",
+      "reject": "Rejeitar",
+      "repeat": "Repetir",
+      "repeat_order": "Repetir pedido",
+      "retry": "Tentar novamente",
+      "return": "Devolver",
+      "send": "Enviar",
+      "search": "Buscar",
+      "see_more": "Ver mais",
+      "select": "Selecionar",
+      "turn_back": "Devolver",
+      "undo": "Desfazer",
+      "up": "Acima",
+      "upload": "Carregar",
+      "validate": "Validar",
+      "dont_show_again": "Não mostrar novamente",
+      "understood": "Entendido"
+    },
+    "roles": {
+      "moderator": "Moderator",
+      "buyer": "Buyer",
+      "auditor": "Auditor",
+      "partner": "Partner",
+      "validator": "Validator",
+      "manager": "Manager",
+      "admin": "Admin",
+      "partner_manager": "Partner Manager"
+    },
+    "options": {
+      "do_not_show_again": "Não mostrar novamente"
+    },
+    "buttons": {
+      "understood": "Entendido"
+    },
+    "admin": {
+      "delivery": {
+        "comment": {
+          "state": {
+            "resolved": "Resolvido",
+            "unresolved": "Não resolvido"
+          }
+        }
+      },
+      "login": {
+        "enter": "Entrar",
+        "error": "Nome de usuário ou senha incorretos.",
+        "password": "Senha",
+        "user": "Usuário"
+      },
+      "menu": {
+        "configuration": "Configuração",
+        "clients": "Clientes",
+        "groups": "Grupos",
+        "logout": "Sair",
+        "deliveries": "Órdenes de Compras",
+        "orders": "Pedidos",
+        "partners": "Proveedores",
+        "products": "Produtos",
+        "support": "Suporte",
+        "users": "Usuários",
+        "families": "Famílias"
+      },
+      "support": {
+        "attach": "Anexar arquivo",
+        "body": "Escreva sua senha no seguinte formulário, você receberá uma resposta em breve.",
+        "buttons": {
+          "cancel": "Cancelar",
+          "ready": "Pronto",
+          "send": "Enviar"
+        },
+        "message": "Se identificar um erro, por favor descreva-o: <br> Passos que o produziram, resultado obtido, resultado esperado e se possível anexe uma captura de tela com o erro/problema. No caso de ser uma pergunta de funcionalidade, por favor explique em detalhe o que você precisa saber.",
+        "textarea": "Mensagem",
+        "textarea_message": "Escreva aqui sua mensagem...",
+        "thanks": "Obrigado por utilizar nosso sistema.",
+        "title": "Atendimento ao cliente",
+        "title_break": "Atendimento <br> ao Cliente",
+        "subject": "Assunto",
+        "subject_holder": "Selecione o assunto..."
+      },
+      "products": {
+        "id": "ID",
+        "family": "Família",
+        "partner_sku": "SKU (proveedor)",
+        "name": "Nombe",
+        "presentation": "Apresentação",
+        "sales_unit": "Unidade de Venda",
+        "brand": "Marca",
+        "supplier": "Proveedor",
+        "partner": "Associado",
+        "price": "Preço",
+        "fractionable": "Fracionável",
+        "true": "Sim",
+        "false": "Não"
+      },
+      "client": {
+        "billing_data": {
+          "create": {
+            "success": "¡Los datos de facturación se crearon éxitosamente!"
+          },
+          "remove": {
+            "confirmation": "¿Estás seguro que querés eliminar estos datos de facturación?",
+            "success": "¡Los datos de facturación se eliminaron éxitosamente!"
+          },
+          "update": {
+            "success": "¡Los datos de facturación se actualizaron éxitosamente!"
+          }
+        },
+        "delivery_point": {
+          "create": {
+            "success": "Nuevo punto de entrega se creó éxitosamente!"
+          },
+          "remove": {
+            "confirmation": "¿Estás seguro que querés eliminar este punto de entrega?",
+            "success": "¡El punto de entrega se eliminó éxitosamente!"
+          },
+          "update": {
+            "success": "¡El punto de entrega se actualizó éxitosamente!"
+          }
+        },
+        "price_list": {
+          "update": {
+            "success": "La lista de precios ha sido cargada correctamente",
+            "error": "Error al actualizar la lista de precios"
+          }
+        }
+      },
+      "families": {
+        "id": "Id",
+        "name": "None",
+        "icon": "Ícone",
+        "show_enable_picture": "Mostrar foto"
+      },
+      "partner" : {
+        "product_list_upload" : {
+          "entities" : {
+            "name" : "Product name",
+            "unit_price" : "Unit price",
+            "base_price" : "Base price",
+            "sales_unit" : "Sales unit",
+            "fractionable" : "Fractionable",
+            "key" : "Id"
+          },
+          "success" : {
+            "message" : "Product list successfully uploaded"
+          },
+          "server_error" : {
+            "title" : "Error in Product List Upload",
+            "message" : "If the problems persist, communicate with support@extendeal.com"
+          },
+          "file_not_selected" : {
+            "title" : "Product list not selected",
+            "message" : "First you must select a list of products to proceed to upload it"
+          },
+          "validation" : {
+            "validation_error" : "Error in product list validation",
+            "numeric" : "The price of the product must be numeric",
+            "exists" : "The %entity% is invalid",
+            "boolean" : "The column %entity% can only have 1 or 0",
+            "required" : "The field %entity% is required",
+            "min": {
+              "numeric" : "The %entity% must be greater than 0.01"
+            }
+          }
+        }
+      }
+    },
+    "alerts": {
+      "price_update": {
+        "title": "Atualização de lista de preços",
+        "content": "Os produtos modificados serão mostrados no seu carrinho de compras, marcados com uma notificação amarela.",
+        "help": "Os produtos atualizados aparecem marcados com uma notificação amarela."
+      },
+      "modal": {
+        "price_update": {
+          "title": "Alerta de modificação de preços",
+          "content": "A lista de preços foi atualizada, poderá ver os mesmos no seu carrinho de compras. Pode continuar a compra ou descartar seu pedido em curso."
+        },
+        "discard_product": {
+          "title": "Descartar produtos",
+          "content": "Os produtos afetados pela modificação de preços serão afetados serão eliminados dentro do carrinho de compras"
+        },
+        "eight_orders_alert": {
+          "title": "Últimos 8 pedidos",
+          "content": "Visualize a quantidade dos produtos solicitados nos últimos oito pedidos identificados com sua data de emissão."
+        },
+        "news_alert": {
+          "title": "Carrito: Localizar producto",
+          "content": "Conoce la nueva manera de localizar un producto desde el Carrito de Compras. Ubíquese sobre el producto con el mouse y haga clic en la lupa para actImpostor el buscador con ese producto."
+        },
+        "cart_alert": {
+          "title": "Carrinho de Compras",
+          "content": "Economize durante sua compra, terá a possibilidade de visualizar ou ocultar o Carrinho clicando sobre el ícone correspondente."
+        },
+        "new_aesthetic": {
+          "title": "Nova estética",
+          "page_1": "Renovamos nossa estética para uma navegação mais fácil e clara. Agora você pode ver o ponto de venda e ponto de entrega com o qual você está interagindo.",
+          "page_2": "Você também pode ver a nova iconografia de estado nas ordens de compra, o que facilitará o rastreamento delas.",
+          "mobile": {
+            "page_1": "Renovamos nossa estética para uma navegação mais fácil e clara."
+          }
+        },
+        "new_aesthetic_delivery_details": {
+          "page_1": {
+            "title": "Novo detalhe de um O.C.",
+            "message": "Agora você pode acessar todas as informações de um Pedido de Compra de forma organizada e dinâmica. Por um lado, você verá os dados gerais e a tabela de produtos. Por outro lado, um comentário, a atividade e os dados do provedor.",
+            "mobile": "Você pode ver todas as informações na guia \"Detalhes\", as moderações do O.C. em \"Atividade\" ou os dados do provedor em \"Provedor\"."
+          },
+          "page_2": {
+            "title": "Número de rastreamento",
+            "message": "Coloque-se no número de rastreamento com o mouse, um botão com um lápis aparecerá, clique nele para editá-lo. Em seguida, atribua um número, aceite para salvar e vá!",
+            "mobile": "Selecione o campo e complete o modal com um número de rastreamento. Aceite para salvar e ir!"
+          },
+          "page_3": {
+            "title": "Atividade de um Ordem de Compra",
+            "message": "Você pode ver as informações dos usuários ou fornecedores que moderam um Pedido de compra. Coloque-se com o mouse sobre o nome do mesmo e uma guia com as informações de contato será exibida.",
+            "mobile": "Você pode ver as informações dos usuários ou provedores que moderam um O.C. selecionando o nome dele."
+          },
+          "page_4":{
+            "title": "Atividade de um Ordem de Compra",
+            "message": "Agora você pode fazer o download do PDF original de um pedido de compra que foi moderado. Vá para a atividade com o mouse e um menu de opções aparecerá e clique nele para baixar o PDF.",
+            "mobile": "Agora você pode baixar o PDF original de um O.C. que foi moderado, selecionando o menu de opções."
+          }
+        }
+      }
+    },
+    "company": {
+      "name": "Extendeal",
+      "sign": {
+        "address": "Bella Vista 1136, C.A.B.A, Argentina",
+        "email": "pedidos.ar@extendeal.com",
+        "phone": "+54 11 4588 0773"
+      }
+    },
+    "country": {
+      "name": "Argentina",
+      "city": "C.A.B.A",
+      "state": "Buenos Aires",
+      "iso_code": "AR"
+    },
+    "errors": {
+      "back": "retornar",
+      "not_found": {
+        "title": "Desculpe, não encontramos a página que você está procurando.",
+        "try_again": "Para resolver o problema, tente recarregar a página. Se isso persistir, voltar para a plataforma."
+      },
+      "access_denied": {
+        "title": "Accesso restringido",
+        "message": ""
+      },
+      "internal": {
+        "title": "Desculpe, houve um erro.",
+        "try_again": "Para resolver o problema, tente recarregar a página. Se isso persistir, informe a área de suporte (%email%).",
+        "report": "Reportar"
+      },
+      "not_compatible": {
+        "title": "Navegador não compatível!",
+        "try_again": "Tem uma versão desatualizada do navegador. Para continuar, você deve atualizar seu navegador.",
+        "update": "Upgrade",
+        "back": "Retorno"
+      }
+    },
+    "files": {
+      "delivery": {
+        "invoice": {
+          "pdf": "Extendeal - Ordem de compra #%delivery_number%.pdf",
+          "xls": "Extendeal - Ordem de compra #%delivery_number%.xls",
+          "xlsx": "Extendeal - Ordem de compra #%delivery_number%.xlsx"
+        },
+        "title": "Extendeal - Ordem de compra #%delivery_number%"
+      },
+      "order": {
+        "invoice": {
+          "pdf": "Extendeal - Pedido #%order_number%.pdf",
+          "xls": "Extendeal - Pedido #%order_number%.xls"
+        },
+        "title": "Extendeal - Pedido #%order_number%"
+      }
+    },
+    "summary": {
+      "buttons": {
+        "approve": "Aprovar",
+        "cancel": "Cancelar",
+        "disapprove": "Desaprovar",
+        "download_excel": "Baixar XLS",
+        "download_pdf": "Baixar Orçamento",
+        "modify": "Editar"
+      },
+      "table": {
+        "order_delivery": "Ordem de compra",
+        "delivery_date": "Data de Entrega",
+        "delivery_time": "Horário de Entrega",
+        "delivery_num": "# Pedido",
+        "partner": "Proveedor",
+        "plus_tax": "",
+        "status": "Status",
+        "total": "Total"
+      },
+      "tabs": {
+        "all": "Todos os O.C.",
+        "dismissed": "Desconsideradas",
+        "history": "Histórico de entregas",
+        "min": {
+          "all": "Todos",
+          "dismissed": "Desconsideradas",
+          "history": "Histórico",
+          "moderatable": "Pendentes",
+          "next": "Prox. entregas"
+        },
+        "moderatable": "Pendentes ",
+        "next": "Próximas entregas",
+        "search": {
+          "requested-orders": "Buscar por N° de pedido, proveedor ou status...",
+          "next-deliveries": "Buscar por N° de O.C., proveedor ou status...",
+          "deliveries-history": "Buscar por N° de O.C., proveedor ou status...",
+          "dismissed-deliveries": "Buscar por N° de O.C., proveedor ou status...",
+          "all-deliveries": "Buscar por N° de O.C., proveedor o status..."
+        }
+      },
+      "tooltip": {
+        "approve": "Aprovar",
+        "disapprove": "Desaprovar",
+        "cancel_delivery": "Cancelar Pedido",
+        "delete_delivery": "Eliminar O.C.",
+        "download_excel": "Baixar XLS",
+        "download_pdf": "Baixar PDF",
+        "enable": "Habilitar",
+        "modify": "Editar",
+        "save_for_later": "Salvar para depois",
+        "view_detail": "Ver Detalhe"
+      },
+      "filters": {
+        "partner": "Proveedor",
+        "date": "Data de entrega",
+        "download_all_excel": "Baixar todos os pedidos em Excel CSV",
+        "time": "Horário de entrega",
+        "status": "Status",
+        "orderer": "Solicitante",
+        "moderator": "Aprovador",
+        "all_m": "Todos",
+        "all_f": "Todas",
+        "date_from": "Desde",
+        "date_to": "Até",
+        "product_family": "Família",
+        "range": "Faixa"
+      },
+      "swipe_feature": {
+        "title": "Swipe nas abas",
+        "body": "Agora você tem a possibilidade de observar todas as abas com uma simples ação de uma forma interatImposto."
+      },
+      "empty_pages": {
+        "pending_fresh": {
+          "title": "Você não tem ordens para aprovar!",
+          "message": "Aqui você verá todos os pedidos que os solicitantes fazem."
+        },
+        "pending": {
+          "title": "Bom trabalho!",
+          "message": "Você já aprovou todos os pedidos pendentes."
+        },
+        "next": {
+          "title": "Você não entregou brincos! Solicitar produtos de seus fornecedores.",
+          "message": "Aqui você vai ver todas as O.C. com datas de entrega futuras."
+        },
+        "history": {
+          "title": "Você ainda não recebeu nenhuma entrega! Solicitar produtos de seus fornecedores.",
+          "message": "Aqui você verá todos os pedidos que foram entregues."
+        },
+        "dismissed": {
+          "title": "Quão eficaz!",
+          "message": "Aqui você encontrará todas as ordens de compra que não serão entregues."
+        },
+        "all_fresh": {
+          "title": "Você ainda não solicitou produtos!",
+          "message": "Aqui você encontrará 100% dos pedidos feitos."
+        },
+        "search": {
+          "title": "Nenhum resultado encontrado!",
+          "message": ""
+        }
+      },
+      "orders_file_name": "Lista de pedidos Extendeal",
+      "requested_by": "Solicitado por",
+      "requested_day": "Dia",
+      "to_partners": "À Proveedores"
+    },
+    "invoices": {
+      "address": "Endereço",
+      "client": "Cliente",
+      "contact": "Contato",
+      "currency": "Moeda",
+      "delivered_family": "Família Entregue",
+      "delivery_date": "Data de Entrega",
+      "delivery_point": "Ponto de Entrega",
+      "delivery_point_address": "Endereço",
+      "locality": "Localidade",
+      "invoice_number": "Número de Nota Fiscal",
+      "order_number": "Nº de Pedido",
+      "phone": "Telefone",
+      "plus_tax": " ",
+      "price": "Preço",
+      "product": "Produto",
+      "quantity": "Quantidadee",
+      "remark": "Comentário",
+      "requested_at": "Solicitado dia",
+      "subtotal": "Subtotal",
+      "to": "a",
+      "total": "Total",
+      "tracking": "Seguimento",
+      "tracking_number": "Número de Seguimento",
+      "unit_price": "Preço Unitário",
+      "user": "Usuário",
+      "without_assign": "Sem assignar",
+      "zip": "CP"
+    },
+    "datetime": {
+      "date": {
+        "day": "d",
+        "daysMin": ["D", "L", "M", "M", "J", "V", "S", "D"],
+        "day_month": {
+          "dash": "d-m",
+          "slash": "d/m",
+          "slash_moment": "DD / MM"
+        },
+        "full": {
+          "dash": "d-m-Y",
+          "dash_moment": "DD-MM-YYYY",
+          "slash": "d/m/Y",
+          "slash_mask": "00/00/0000",
+          "slash_moment": "DD/MM/YYYY",
+          "slash_datepicker": "dd/mm/yyyy",
+          "slash_placeholder": "--/--/----"
+        },
+        "month": "m",
+        "month_year": {
+          "dash": "m-Y",
+          "slash": "m/Y"
+        },
+        "year": "Y"
+      },
+      "datetime": {
+        "dash": "d-m-Y H:i:s",
+        "dash_moment": "DD-MM-YYYY HH:mm",
+        "slash": "d/m/Y H:i:s"
+      },
+      "header": {
+        "full": "%day_number% de %month_name% de %full_year%"
+      },
+      "lang": "es",
+      "time": {
+        "hour": "H",
+        "hour_minutes": "H:i",
+        "hour_minutes_moment": "HH:mm",
+        "hour_minutes_moment_hs": "HH:mm \\h\\s",
+        "full": "H:i:s",
+        "minutes": "i",
+        "minutes_seconds": "i:s",
+        "seconds": "s",
+        "at": "a las",
+        "hs": "H:i \\h\\s",
+        "hs_placeholder": "--:-- hs"
+      },
+      "timezone": "America/Sao_Paulo"
+    },
+    "means_of_payment": {
+      "current_acount": "Conta Corrente"
+    },
+    "money": {
+      "currency": "R$",
+      "decimals": 2,
+      "decimals_separator": ",",
+      "thousands_separator": "."
+    },
+    "sections": {
+      "administrator": "Administrador",
+      "change_password": "Modificar Senha",
+      "clients": "Clientes",
+      "configuration": "Configuração",
+      "contact": "Contato",
+      "create_order": "Criar Pedido",
+      "customer_support": "Atendimento ao Cliente",
+      "customer_support_break": "Atendimento <br> ao Cliente",
+      "dashboard": "Dashboard",
+      "inbox": "Caixa de Entrada",
+      "tailormade": "Personalizado",
+      "delivery_points": "Pontos de Entrega",
+      "efficient_buy": "Compra Eficiente",
+      "groups": "Grupos",
+      "help_center": "Central de Ajuda",
+      "help": "Ajuda",
+      "login": "Login",
+      "logout": "Sair",
+      "news": "Novidades",
+      "orders": "Pedidos",
+      "orders_in_one_place": "Todos os pedidos em um só lugar",
+      "partners": "Proveedores",
+      "partners_system": "Sistema de Proveedores",
+      "price_list": "Lista de Preços",
+      "products": "Produtos",
+      "quotient": "Calculador",
+      "register": "Registro",
+      "settings": "Ajustes",
+      "statistics": "Estatísticas",
+      "summary": "Resumo",
+      "supplier_system": "Sistema de Proveedores",
+      "support": "Suporte",
+      "user_panel": "Painel do Usuário",
+      "users": "Usuários",
+      "validation": "Validação",
+      "modify_order": "Modificar",
+      "order_confirmation": "Confirmação do Pedido"
+    },
+    "statuses": {
+      "cancelled": "Cancelado",
+      "closed": "Datado",
+      "confirmed": "Confirmado",
+      "deleted": "Eliminado",
+      "delivered": "Entregue",
+      "disapproved": "Desaprovado",
+      "expired": "Expirado",
+      "in_progress": "Em Progresso",
+      "not_delivered": "Não Entregue",
+      "opened": "Aberto",
+      "ordered": "Ordemado",
+      "read": "Lido",
+      "rejected": "Rejeitado",
+      "requested": "Solicitado",
+      "returned": "Devolvido",
+      "sent": "Enviado",
+      "shipped": "Despachado",
+      "dispatched": "Despachado",
+      "text": {
+        "dismissed": "Entregas Desconsideradas",
+        "history": "Hist. de Entregas",
+        "moderatable": "Pend. de Aprobação",
+        "next": "Próximas Entregas",
+        "returned": "Pedidos Devolvidos",
+        "validatable": "Pend. de Validação",
+        "validated": "Pedidos Validados"
+      },
+      "actions": {
+        "requested": "Solicitada",
+        "expired": "Expirada",
+        "disapproved": "Desaprobada",
+        "dispatched": "Despachada",
+        "modified": "Modificada",
+        "approved": "Aprobada",
+        "rejected": "Rechazada",
+        "ordered": "Enviada",
+        "read": "Leída",
+        "confirmed": "Confirmada",
+        "cancelled": "Cancelada",
+        "shipped": "Despachada",
+        "delivered": "Entregada",
+        "not_delivered": "No entregada",
+        "returned": "Devuelta",
+        "validated": "Validada"
+      },
+      "validated": "Validado"
+    },
+    "support": {
+      "buttons": {
+        "back": "Voltar",
+        "retry": "Tentar novamente"
+      },
+      "response": {
+        "error": "Sua consulta não pôde ser processada, por favor tente novamente.",
+        "success": "Sua consulta foi enviada com sucesso."
+      },
+      "subjects": {
+        "admin": {
+          "assign_icon_to_families": "Assignar um ícone existente à uma nova família.",
+          "change_delivery_status": "Apagar un pedido que já foi aprovado pelo proveedor.",
+          "modify_statistics": "Modificações na aba de Estatísticas.",
+          "other": "Outro.",
+          "problems_abm_client": "Problemas ao cadastrar/excluir um cliente.",
+          "problems_abm_partner": "Problemas ao cadastrar/excluir um proveedor.",
+          "problems_abm_product_list": "Problemas de inclusão/exclusão de lista no sistema.",
+          "problems_with_client_users": "Problemas com a interação entre aprovador e solicitante de um cliente.",
+          "problems_with_mails": "Problemas no email ao cliente com o detalhe do pedido realizado.",
+          "problems_with_products": "Problemas com a visualização de produtos por parte do cliente.",
+          "request_new_icons": "Gerar desenho de novos ícones para novas famílias."
+        },
+        "client": {
+          "add_new_partner": "Adicionar um proveedor novo.",
+          "add_product_to_partner": "Adicionar produto/s a um proveedor existente.",
+          "cant_download_files": "Problemas para baixar Excel e/ou PDF.",
+          "cant_finish_order": "Não posso finalizar o processo de \"Fazer pedido\".",
+          "cant_see_pending_approval_orders": "Em outra aba \"Resumo\" não é possível visualizar os pedidos pendentes de aprobação.",
+          "change_partner_information": "Modificar informação de proveedor.",
+          "delete_product_from_product_list": "Eliminar produto/s da lista.",
+          "how_to_change_my_password": "Quero saber como modificar minha senha.",
+          "other": "Outro.",
+          "problems_on_orders_visualization": "Problemas para visualizar os pedidos no \"Resumo\".",
+          "problems_on_products_visualization": "Problemas na visualização dos produtos.",
+          "zoom_not_work_on_statistics": "Não posso dar zoom nas Estatísticas."
+        }
+      },
+      "thanks": "Muito obrigado por utilizar nosso sistema."
+    },
+    "maintenance": {
+      "message": "Estamos realizando tarefas de manutenção em nosso sistema. Por favor, tente novamente mais tarde. <br>Desculpe pelos qualquer inconveniente.",
+      "doing_maintenance": "Desculpe, a plataforma está em manutenção.",
+      "wait": "Aguarde alguns minutos e tente novamente."
+    },
+    "messages": null,
+    "sms": {
+      "delivery_ordered": {
+        "message": "Você tem um novo pedido do cliente %client_name%. O número do pedido é %delivery_number%. %url%"
+      }
+    },
+    "configuration": {
+      "buttons": {
+        "back": "Voltar",
+        "confirm": "Confirmar",
+        "cancel": "Cancelar",
+        "change_password": "Modificar Senha",
+        "retry": "Tentar novamente",
+        "save": "Salvar"
+      },
+      "current_password": "Senha Atual",
+      "email": "Email",
+      "name": "Nome",
+      "password": "Senha",
+      "response": {
+        "password_error": "A senha atual está incorreta, por favor tente novamente.",
+        "password_success": "Senha modificada com sucesso."
+      },
+      "re_password": "Repetir Senha",
+      "thanks": "Muito obrigado por utilizar nosso sistema.",
+      "title": "Modificar Senha"
+    },
+    "home": {
+      "group": "Grupo",
+      "hello": "Bem vindo",
+      "username": "%username% a Extendeal!"
+    },
+    "login": {
+      "email": "Email",
+      "enter": "Entrar",
+      "error_password": "Erro, senha incorreta.",
+      "error_user": "Erro, usuário inválido.",
+      "forgot_password": "Esqueceu sua senha?",
+      "password": "Contraseña",
+      "prImpostocy_policies": "Políticas de PrImpostocidade",
+      "remember_password": "Relembrar Senha",
+      "terms_and_conditions": "Termos e Condições"
+    },
+    "moderatable_order": {
+      "accept": {
+        "error_action": "A ordem <strong>#%order_number%</strong> não pôde ser aprovada <br>aprobada corretamente.<br><br> Por favor tente novamente.",
+        "error_text": "No se pudo aprobar el presupuesto.",
+        "go_home": "Ir ao início",
+        "success_text": "Seu pedido foi aprovado, o mesmo foi enviado aos solicitantes correspondientes. Já é possível realizar um novo pedido.",
+        "success_title": "Seu pedido #%order_number% foi aprovado",
+        "no_results": "Os pedidos da ordem <strong>#%order_number%</strong> <br>foram moderados."
+      },
+      "cancel": {
+        "buttons": {
+          "back": "Voltar",
+          "confirm": "Confirmar Cancelamento",
+          "disapprove": "Desaprovar"
+        },
+        "comment": "<strong class=\"modal-row__subtitle\">Incluir comentário:</strong> <strong class=\"modal-row__info\"> É necessária informação complementar ao motivo selecionado.</strong>",
+        "error": "Por favor selecionar uma razão para continuar",
+        "error_action": "A Ordem <strong>#%order_number%</strong> não pôde ser cancelada <br>cancelada corretamente.<br><br> Por favor tene novamente.",
+        "go_home": "Ir al Inicio",
+        "no_results": "Os pedidos desta Ordem foram moderados",
+        "optional": "OPCIONAL - É necessária informação complementar ao motivo selecionad",
+        "question": "Tem certeza que deseja desaprovar este pedido?",
+        "reasons": {
+          "reason": "Nenhuma",
+          "reason0": "Nenhuma",
+          "reason1": "Orçamento excedido",
+          "reason2": "Erro na quantidade pedida",
+          "reason3": "Discrepância no prazo de entrega",
+          "reason4": "Outro"
+        },
+        "text": "Seu pedido foi desaprovado, o mesmo foi enviado aos solicitantes correspondientes. Já é possível realizar um novo pedido.",
+        "title": "Seu pedido #%order_number% foi desaprovado",
+        "subtext": "Por favor, selecione o motivo do cancelamento:",
+        "success_action": "O orçamento <span class=\"order-id\">#%order_number%</span> <br>&nbsp;&nbsp;&nbsp;foi <span class=\"order-cancelled\">cancelado</span> com sucesso."
+      },
+      "modal": {
+        "confirm": {
+          "approve": "Aprovar",
+          "back": "Voltar",
+          "order": "Pedido",
+          "partner": "Proveedor",
+          "partners": "Proveedores",
+          "question": "Tem certeza que deseja aprovador a Ordem de compra?",
+          "thanks": "Muito obrigado por utilizar nsso sistema.",
+          "title": "Aprovar Ordem de Compra",
+          "total": "Total"
+        },
+        "delete": {
+          "approve": "Aprovar",
+          "back": "Voltar",
+          "comment": "<strong class=\"modal-row__subtitle\">Incluir comentário:</strong>  <strong class=\"modal-row__info\"> É necessária informação complementar ao motivo selecionado.</strong>",
+          "delete": "Eliminar",
+          "order": "Pedido",
+          "partner": "Proveedor",
+          "partners": "Proveedores",
+          "question": "Tem certeza que deseja eliminar este pedido da ordem de compra?",
+          "placeholder_text": "Escreva aqui seu comentário...",
+          "thanks": "Muito obrigado por utilizar nosso sistema.",
+          "title": "Eliminar Pedido",
+          "total": "Total",
+          "subtext": "Por favor, selecione o motivo do cancelamento:"
+        }
+      },
+      "expired": {
+        "reason": "O pedido venceu porque passou a data limite de aprovação."
+      }
+    },
+    "order_deliveries": {
+      "actions": {
+        "delete": "Eliminar",
+        "edit": "Modificar",
+        "add_comment": "Adicionar Comentário"
+      },
+      "billing": {
+        "address": "Endereço",
+        "bill_to": "Faturar a",
+        "category": "Cond. Frente ao Imposto",
+        "contact_name": "Nome de contacto",
+        "comments": "Comentário",
+        "current_account": "Current Account",
+        "legal_address": "Endereço Fiscal",
+        "legal_name": "Razão Social",
+        "name": "Nome",
+        "utid": "CNPJ",
+        "title": "Dados de Faturamento",
+        "payments_method": "Método de Pagamento",
+        "payment_method": "Condição de Pagamento",
+        "payments_comments": "Observações sobre o método de pagamento",
+        "responsible": "Responsável Inscrito"
+      },
+      "buttons": {
+        "accept": "Aceitar",
+        "back": "Voltar",
+        "cancel": "Cancelar",
+        "confirm": "Confirmar",
+        "delete": "Eliminar",
+        "download_excel": "Baixar XLS",
+        "download_invoice": "Baixar Orçamento",
+        "modify": "Modificar",
+        "next": "Seguinte",
+        "reject": "Rejeitar",
+        "validate": "Validar"
+      },
+      "delivery_points": "Pontos de Entrega",
+      "header": {
+        "alerts": {
+          "return_reason": "Motivo da rejeição:"
+        },
+        "boxes": {
+          "delivery_date": "Data de Entrega",
+          "delivery_time": "Hora de Entrega",
+          "email": "Email",
+          "empty_name": "Sem Nome",
+          "empty_email": "Sem Email",
+          "empty_phone": "Sem Telefone",
+          "invoice_number": "Nº de Nota Fiscal",
+          "moderator": "Aprovador",
+          "name": "Nome",
+          "orderer": "Solicitante",
+          "partner": "Fornecedor",
+          "phone": "Telefone",
+          "total": "Total",
+          "tracking": "Seguimento",
+          "view_detail": "Ver detalhe"
+        },
+        "detail": "Detalhe",
+        "invoice_number": "Nº de Nota Fiscal",
+        "oc": "O.C.",
+        "order_delivery": "Ordem de Compra",
+        "order": "Pedido",
+        "orders": "Pedidos",
+        "search": "Buscar...",
+        "status_title": "Estado",
+        "statuses": {
+          "cancelled": "Cancelado",
+          "closed": "Fechado",
+          "confirmed": "Confirmado",
+          "deleted": "Eliminado",
+          "delivered": "Entregue",
+          "disapproved": "Desaprovado",
+          "dispatched": "Despachada",
+          "expired": "Expirado",
+          "in_progress": "Em progresso",
+          "not_delivered": "Não entregue",
+          "opened": "Aberto",
+          "ordered": "Enviada",
+          "read": "Lido",
+          "rejected": "Rejeitado",
+          "requested": "Solicitado",
+          "returned": "Devolvido",
+          "sent": "Enviado",
+          "shipped": "Despachado",
+          "moderatable": "Pendente",
+          "validated": "Validado"
+        },
+        "tracking": "Rastreamento",
+        "without_assign": "Sem atribuição"
+      },
+      "modal": {
+        "confirm": {
+          "question": "Tem certeza que deseja confirmar as modificações realizadas?",
+          "thanks": "Muito obrigado por utilizar nosso sistema.",
+          "title": "Confirmar modificações"
+        },
+        "delete_order": {
+          "title": "Eliminar Pedido?",
+          "message": "O pedido de %partner_name% será eliminado do seu carrinho"
+        },
+        "delete_partner": {
+          "message": "O fornecedor será eliminado do seu pedido",
+          "delete": "Eliminar"
+        },
+        "delete_partner_and_order": {
+          "message": "Ao eliminar o último fornecedor, seu pedido atual será descartando, perdendo todas as modificações realizadas."
+        },
+        "legal_name": {
+          "title": "Razão Social"
+        },
+        "not_delivered": {
+          "question": "Tem certeza que deseja marcar este pedido como não entregue?",
+          "title": "Pedido #%delivery_number% não entregue"
+        },
+        "return": {
+          "comment": "<strong class=\"modal-row__subtitle\">Incluir comentário:</strong>  <strong class=\"modal-row__info\">É necessária informação complementar ao motivo selecionado. </strong>",
+          "error": "Por favor selecionar um motivo.",
+          "order": "Pedido",
+          "partner": "Proveedor",
+          "question": "Tem certeza que deseja rejeitar o pedido?",
+          "subtitle": "Motivo da rejeição?",
+          "thanks": "Muito obrigado por utilizar nosso sistema.",
+          "title": "Rejeitar Pedido",
+          "total": "Total"
+        },
+        "validate": {
+          "error": null,
+          "delivery_date": "Dara de Entrega",
+          "delivery_time": "Hora de Entrega",
+          "order": "Pedido",
+          "partner": "Proveedor",
+          "question": "Tem certeza que deseja validar o pedido?",
+          "select_datetime": "Selecione a data e hora de recepção",
+          "thanks": "Obrigado por utilizar nosso sistema.",
+          "title": "Validar Pedido",
+          "total": "Total"
+        },
+        "repeat": {
+          "question": "Tem certeza que deseja Lembre-se que se tiver um pedido em andamento, será descartado.\n"
+        }
+      },
+      "no_results": "Não foram encontrados resultados.",
+      "order_confirmation": "Confirmação da Ordem",
+      "order_detail": "Detalhe do Pedido",
+      "tab": {
+        "returned": "Rejeitados",
+        "returned_deliveries": "Pedidos Rejeitados",
+        "validatable": "Pendentes de Validação",
+        "validated": "Validados",
+        "validated_deliveries": "Pedidos Validados"
+      },
+      "table": {
+        "action": "Ação",
+        "actions": "Ações",
+        "bulk_price": "Preço a granel",
+        "bulk_price_by": "Preço a granel",
+        "in_kg": "em Kg",
+        "delivery_date": "Data de Entrega",
+        "delivery_time": "Hora de Entrega",
+        "delivery_number": "Nº de Pedido",
+        "order_number": "Nº de O.C.",
+        "partner": "Proveedor",
+        "plus_tax": " ",
+        "presentation": "Unidade",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "quantity_received": "Cant. recibida",
+        "quantity_received_max": "Quantidade recibida",
+        "quantity_requested": "Cant. solicitada",
+        "quantity_requested_max": "Quantidade solicitada",
+        "qty": "Cant.",
+        "subtotal": "Subtotal",
+        "tax": "",
+        "total": "Total",
+        "total_final": "Total Final",
+        "total_initial": "Total Inicial",
+        "unit_price": "Preço Unitário"
+      },
+      "tooltip": {
+        "download_excel": "Baixar XLS",
+        "download_pdf": "Baixar PDF",
+        "download_invoice": "Baixar Orçamento",
+        "modify": "Modificar",
+        "reject": "Rejeitar",
+        "repeat_order": "Repetir Pedido",
+        "validate": "Validar",
+        "validate_date": "Selecione a data de entrega",
+        "validate_legal_name": "Por favor selecione uma razão social",
+        "validate_payment_method": "Por favor selecione o método de pagamento",
+        "view_detail": "Ver detalhe",
+        "view_details": "Ver detalhes"
+      },
+      "reasons": {
+        "reason": "Nenhum",
+        "reason0": "Nenhum",
+        "reason1": "Produto em mal estado.",
+        "reason2": "Produto faltante.",
+        "reason3": "Não é um produto que se tenha pedido.",
+        "reason4": "Outro."
+      }
+    },
+    "order_products_select": {
+      "add_comments": "Añadir Comentario",
+      "buttons": {
+        "back": "Voltar",
+        "change": "Modificar",
+        "confirm": "Confirmar",
+        "confirm_changes": "Confirmar modificações",
+        "discard": "Descartar",
+        "download": "Baixar",
+        "next": "Seguinte",
+        "prev": "Atrás"
+      },
+      "charter": "Frete",
+      "checkout": {
+        "copyright": "&copy;%current_year% Extendeal. All Rights Reserved | info@extendeal.com",
+        "text1": "O pedido foi enviado.",
+        "text2": "Um representante de Extendeal lhe contatará em breve.",
+        "text_aproval": "O pedido foi enviado, seu número de pedido é #%order_number%.<br /> Um representante de Extendeal lhe contatará em breve.\n",
+        "thanks": "Muito obrigado!",
+        "title": "O pedido foi enviado, seu número de pedido é #%order_number%"
+      },
+      "comments": "Comentários",
+      "deliveries_moderated": "Pedidos Moderados",
+      "delivery_date": "Data de Entrega",
+      "delivery_dates": "Datas de Entrega",
+      "delivery_point": "Pto. de Entrega",
+      "delivery_point_full": "Ponto de Entrega",
+      "empty_cart": "Su Carrito está vacío.<br> Agregue productos para continuar con <br> su compra.",
+      "change_delivery_point": "Modificar Ponto de Entrega",
+      "delivery_information": "Dados de Entrega",
+      "last_orders": "Últimos pedidos",
+      "min_amount": "Monto Mínimo",
+      "min_amount_order": "Quantia mínima não alcançada",
+      "missing": "Faltam",
+      "order": "Sua Ordem",
+      "order_cart": "Carrinho de Compras",
+      "order_confirmation": {
+        "brand": "Marca",
+        "title": "Confirmação do Pedido",
+        "plus_tax": "",
+        "product": "Produto",
+        "products_before": "Produtos Anteriores",
+        "products_selected": "Produtos Selecionados",
+        "quantity": "Quantidade",
+        "total": "Total"
+      },
+      "products_families": "Famílias de Produtos",
+      "products_list": {
+        "brand": "Marca",
+        "currency": "Preço U.",
+        "loading": "Carregando",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "subtotal": "Subtotal",
+        "total": "Total",
+        "unit_sale": "Unidade",
+        "bulk_price": "Preço B."
+      },
+      "search": {
+        "holder": "Buscar Produtos em..."
+      },
+      "steps": {
+        "step1": "Seleção",
+        "step2": "Dados de Entrega",
+        "step3": "Confirmação",
+        "step4": "Finalização",
+        "min": {
+          "step1": "Seleção",
+          "step2": "D. de Entrega"
+        }
+      },
+      "subt": "Subt.",
+      "subtotal": "Subtotal",
+      "time_range": "Faixa Horária",
+      "total": "Total"
+    },
+    "order_completed": {
+      "order_placed_partner": "Seu pedido #%order_number% foi realizado!",
+      "order_placed_buyer": "¡Seu pedido #%order_number% foi solicitado!",
+      "order_sent": "Seu pedido foi finalizado, o mesmo foi enviado aos proveedores correspondentes.",
+      "order_requested": "Seu pedido foi finalizado, o mesmo foi enviado aos aprovadores correspondentes.",
+      "order_ready": "Já pode gerar um novo pedido.",
+      "new_order": "Novo pedido",
+      "accept": "Aceitar"
+    },
+    "partner_moderatable_order": {
+      "confirm": {
+        "order_confirmed": "Foi <span class=\"order-confirmed\">confirmado</span> com sucesso",
+        "text": "O pedido <span class=\"order-id\">#%delivery_number%</span>",
+        "text2": "para o cliente <span class=\"order-for\">%client_name%</span>",
+        "thanks": "Muito obrigado!"
+      },
+      "not_moderatable": "Este pedido já foi moderado.",
+      "reject": {
+        "buttons": {
+          "confirm": "Confirmar Rejeição",
+          "go_home": "Ir ao Início"
+        },
+        "error": "Deve selecionar uma razão para continuar",
+        "error_action": "O pedido <strong>#%delivery_number%</strong> não pôde <br>ser rejeitado corretamente.<br><br> Por favor tente novamente.",
+        "optional": "OPCIONAL - É necessária informação complementar ao motivo selecionado.",
+        "order_cancelled": "Foi <span class=\"order-rejected\">rejeitada</span>",
+        "reasons": {
+          "reason": "Nenhum",
+          "reason0": "Nenhum",
+          "reason1": "Falta de Stock.",
+          "reason2": "Data de Entrega.",
+          "reason3": "Questões administratImpostos (contatar o proveedor).",
+          "reason4": "Outro."
+        },
+        "subtext": "Por favor, selecione o motivo de rejeição:",
+        "success_action": "O pedido <span class=\"order-id\">#%delivery_number%</span> <br>&nbsp;&nbsp;&nbsp;foi <span class=\"order-rejected\">rejeitado</span> com sucesso.",
+        "text": "Rejeitar entrega para o pedido <strong>#%delivery_number%</strong>",
+        "thanks": "Muito obrigado!"
+      },
+      "success": {
+        "title": "¡La Orden de Compra #%delivery_number% ha sido confirmada!",
+        "text": "Ha confirmado la Orden de Compra, esta fue enviada al cliente correspondiente.",
+        "confirm": {
+          "title": "¡A Ordem de Compra #%delivery_number% foi confirmada!",
+          "text": "A Ordem de Compra foi confirmada e enviada ao cliente correspondente."
+        },
+        "reject": {
+          "title": "A Ordem de Compra #%delivery_number% foi rejeitada!",
+          "text": "A Ordem de Compra foi confirmada e enviada ao cliente correspondente."
+        }
+      }
+    },
+    "recover": {
+      "back": "Voltar",
+      "body": "Nos próximos minutos você receberá um email de confirmação com as instruções para poder escolher uma nova senha.",
+      "cancel": "Cancelar",
+      "change_password": "Modificar Senha",
+      "email_not_exists": "O endereço de email informado não existe",
+      "error": "Erro!",
+      "go_home": "Ir ao Início",
+      "mandatory_field": "Este campo é requerido.",
+      "new_link": "Solicite um novo link",
+      "new_password": "Nova Senha",
+      "non_existence_email": "O endereço de email informado não existe.",
+      "password_change": "Sua senha foi modificada com sucesso.",
+      "password_error": "Ocorreu um erro ao modificar sua senha.",
+      "passwords_not_match": "A senha não coincide.",
+      "please": "Por favor",
+      "re_password": "Repita a Senha",
+      "send": "Enviar",
+      "success": "Cambio de contraseña exitoso",
+      "title": "Revise o seu email",
+      "unregistered_email": "O endereço de e-mail não está registrado.",
+      "password_length_validate": "Deve conter pelo menos 6 caracteres.",
+      "password_incorrect": "Senha incorreta.",
+      "changing_password": "Modificar Senha"
+    },
+    "statistics": {
+      "add_filter": "Adicionar Filtro",
+      "all_delivery_points": "Todos os Pontos de Entrega",
+      "all_families": "Todas as Famílias",
+      "all_partners": "Todos os Proveedores",
+      "all_products": "Todos os Produtos",
+      "average_price": "Média de preço",
+      "avg_price": "P. Prom.",
+      "apply": "Aplicar Filtro",
+      "bar": "Barra",
+      "bars": "Barras",
+      "day": "Día",
+      "delete": "Eliminar",
+      "delete_filter": "Eliminar Filtro",
+      "delivery_period": "Período de Entrega",
+      "delivery_point": "Ponto de Entrega",
+      "delivery_points": "Pontos de Entrega",
+      "download_graphic": "Baixar Gráfico",
+      "download_excel": "Baixar XLS",
+      "filters_params": "Parámetros de Filtros",
+      "line": "Linha",
+      "lines": "Linhas",
+      "maximum_price": "Preço Máximo",
+      "max_price": "P. Max.",
+      "minimum_price": "Preço Mínimo",
+      "min_price": "P. Min.",
+      "month": "Mes",
+      "months": "Meses",
+      "new_filter": "Novo Filtro",
+      "not_apply": "Não aplica",
+      "notification": "Notificação",
+      "partners": "Proveedores",
+      "period": "Período",
+      "products": "Produtos",
+      "product_family": "Família de Produtos",
+      "products_families": "Famílias de Produtos",
+      "total": "Total",
+      "total_units": "Unidades Totais",
+      "total_u": "U. Tot.",
+      "unit": "Unidade",
+      "units": "Unidades",
+      "week": "Semana",
+      "no_data": "Não há dados para mostrar",
+      "dashboard": {
+        "small_print": "(*) Representa a quantidade de vezes que o dia se repete no período de tempo representado.",
+        "current_month": "Mês atual",
+        "last_30_days": "Últimos 30 dias",
+        "custom": "Personalizado",
+        "orders": "Pedidos",
+        "money": "Dinheiro",
+        "most_order_days": "Quantidade de pedidos por dia",
+        "percentage": "Porcentagem",
+        "total": "Total",
+        "see_more": "Ver mais",
+        "day_of_week": "Dia da semana",
+        "legend": "Legenda",
+        "updated_at": "Atualizado em",
+        "most_requested_families": "Famílias de produtos mais pedidas",
+        "most_frequent_suppliers": "Proveedores mais frequentes",
+        "product_family": "Família de Produtos",
+        "percen": "Porcen.",
+        "prod_fam": "Flia. de Produtos",
+        "partner": "Proveedor",
+        "monday": "Segunda ",
+        "tuesday": "Terça-feira ",
+        "wednesday": "Quarta-feira ",
+        "thursday": "Quinta-feira ",
+        "friday": "Sexta-feira ",
+        "saturday": "Sábado ",
+        "sunday": "Domingo ",
+        "statistics": "Estatísticas",
+        "to": "ao",
+        "others": "Outros",
+        "families": "Famílias de produtos",
+        "deliveries": "Pedidos",
+        "partners": "Proveedores",
+        "families_description": "Quantidade de famílias únicas solicitadas no período de tempo selecionado.",
+        "deliveries_description": "Quantidade total de pedidos realizados no período de tempo selecionado.",
+        "partners_description": "Quantidade de proveedores únicos aos quais foram realizados pedidos no período de tempo selecionado.",
+        "money_description": "Quantidade total de dinheiro investido no período de tempo selecionado.",
+        "top_bar_msg": "Por favor selecione um intervalo de datas.",
+        "accept": "Aceitar",
+        "cancel": "Cancelar",
+        "date_format": "DD/MM/YYYY",
+        "language": "pt",
+        "abbreviations": {
+          "monday": "S",
+          "tuesday": "T",
+          "wednesday": "Q",
+          "thursday": "Q",
+          "friday": "S",
+          "saturday": "S",
+          "sunday": "D"
+        },
+        "value": "valor",
+        "delivery_point_filter": "pto. de entrega",
+        "all": "all",
+        "all_clients": "Todos os clientes"
+      },
+      "tailormade": {
+        "download_xls": "Baixar XLS",
+        "download_csv": "Baixar CSV",
+        "download_png": "Baixar PNG",
+        "values_in": "Valores em:",
+        "type_of_graphic": "Tipo de gráfico:",
+        "group_by": "Agrupar por:",
+        "graphic_options": "Opções de gráfico",
+        "minimal_price": "Preço máximo",
+        "maximun_price": "Preço mínimo",
+        "average_price": "Média de preço",
+        "total": "Total",
+        "total_units": "Unidades totais",
+        "all": "Todos",
+        "apply": "Aplicar",
+        "delivery_points": "Pontos de entrega",
+        "product_families": "Flia. de produtos",
+        "partners": "Proveedores",
+        "products": "Produtos",
+        "chart_date_format": "%d/%m",
+        "chart_date_format_year": "%d/%m/%y",
+        "delete": "Eliminar",
+        "restore": "Restaurar",
+        "lineal": "Lineal",
+        "bars": "Barras",
+        "money": "Dinheiro",
+        "units": "Unidades",
+        "days": "Dias",
+        "weeks": "Semanas",
+        "months": "Meses"
+      }
+    },
+    "validation": {
+      "buttons": {
+        "accept": "Aceitar",
+        "back": "Voltar",
+        "download_excel": "Baixar XLS",
+        "download_invoice": "Baixar Orçamento",
+        "modify": "Modificar",
+        "not_delivered": "Não Entregue",
+        "reject": "Rejeitar",
+        "restore": "Restaurar",
+        "validate": "Validar"
+      },
+      "delivery_points": "Pontos de Entrega",
+      "header": {
+        "alerts": {
+          "return_reason": "Motivo da rejeição:"
+        },
+        "boxes": {
+          "delivery_date": "Data de Entrega",
+          "delivery_time": "Hora de Entrega",
+          "email": "Email",
+          "empty_name": "Sem Nome",
+          "empty_email": "Sem Email",
+          "empty_phone": "Sem Telefône",
+          "invoice_number": "Nº de Nota Fiscal",
+          "moderator": "Aprovador",
+          "name": "Nome",
+          "orderer": "Solicitante",
+          "partner": "Proveedor",
+          "phone": "Telefône",
+          "tracking": "Seguimento",
+          "total": "Total"
+        },
+        "invoice_number": "Nº de Nota Fiscal",
+        "order": "Pedido",
+        "orders": "Pedidos",
+        "search": "Buscar por N° de O.C., proveedor ou status...",
+        "statuses": {
+          "cancelled": "Cancelado",
+          "closed": "Datado",
+          "confirmed": "Confirmado",
+          "deleted": "Eliminado",
+          "delivered": "Entregue",
+          "disapproved": "Desaprovado",
+          "dispatched": "Despachada",
+          "expired": "Expirado",
+          "in_progress": "Em progresso",
+          "not_delivered": "Não entregue",
+          "opened": "Aberto",
+          "ordered": "Enviada",
+          "read": "Lido",
+          "rejected": "Rejeitado",
+          "requested": "Solicitado",
+          "returned": "Devolvido",
+          "sent": "Enviado",
+          "shipped": "Despachado",
+          "moderatable": "Pendentes",
+          "validated": "Validados"
+        },
+        "tracking": "Seguimento",
+        "without_assign": "Sem assignar"
+      },
+      "modal": {
+        "confirm": {
+          "question": "Tem certeza que deseja confirmar as modificações realizadas?",
+          "thanks": "Muito obrigado por utilizar nosso sistema.",
+          "title": "Confirmar Modificações"
+        },
+        "return": {
+          "comment": "<strong class=\"modal-row__subtitle\">Incluir comentários comentario:</strong> <strong class=\"modal-row__info\">É necessária informação complementar ao motivo selecionado.</strong>",
+          "error": "Por favor selecionar motivo da rejeição.",
+          "order": "Pedido",
+          "partner": "Proveedor",
+          "partners": "Proveedores",
+          "question": "Tem certeza que deseja rejeitar este pedido?",
+          "subtitle": "Motivo da rejeição?",
+          "thanks": "Muito obrigado por utilizar nosso sistema.",
+          "title": "Rejeitar pedido",
+          "total": "Total"
+        },
+        "validate": {
+          "error": null,
+          "delivery_date": "Data de Entrega",
+          "delivery_time": "Hora de Entrega",
+          "invoice_number": "Ingresse o número de Nota Fiscal:",
+          "order": "Pedido",
+          "partner": "Proveedor",
+          "question": "Tem certeza que deseja validar o pedido",
+          "select_datetime": "Selecione a Data e horário de recepção",
+          "submit_invoice_number": "Nº de Nota Fiscal",
+          "thanks": "Muito obrigado por utilizar nosso sistema.",
+          "title": "Validar Pedido",
+          "total": "Total"
+        }
+      },
+      "no_results": "Não foram encontrados resultados.",
+      "tab": {
+        "returned": "Rejeitados",
+        "returned_deliveries": "Pedidos Rejeitados",
+        "validatable": "Pendentes de Validação",
+        "validated": "Validados",
+        "validated_deliveries": "Pedidos Validados",
+        "min": {
+          "validatable": "Pendentes",
+          "validated": "O.C. Validadas"
+        }
+      },
+      "table": {
+        "action": "Ação",
+        "actions": "Ações",
+        "delivery_date": "Data de Entrega",
+        "delivery_number": "Nº de Pedido",
+        "partner": "Proveedor",
+        "plus_tax": " ",
+        "presentation": "Unidade",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "qty": "Cant.",
+        "subtotal": "Subtotal",
+        "tax": "",
+        "total": "Total",
+        "total_final": "Total Final",
+        "total_initial": "Total Inicial",
+        "unit_price": "Preço Unitario",
+        "unit_sale": "Unidade de Venda",
+        "base_price": "Preço Produto",
+        "download_xls": "Baixar XLS",
+        "download_pdf": "Baixar PDF",
+        "delivery_time": "Hora de Entrega",
+        "order_delivery": "Orden de Compra",
+        "not_delivered": "Marcar como No entregada",
+        "view_detail": "Ver detalhe"
+      },
+      "tooltip": {
+        "download_excel": "Baixar XLS",
+        "download_pdf": "Baixar PDF",
+        "download_invoice": "Baixar Presupuesto",
+        "modify": "Modificar",
+        "reject": "Rejeitar",
+        "return": "Devolver",
+        "repeat": "Repetir Pedido",
+        "validate": "Validar",
+        "view_detail": "Ver detalhe",
+        "view_details": "Ver detalhes"
+      },
+      "reasons": {
+        "reason": "Nenhum",
+        "reason0": "Nenhum",
+        "reason1": "Produto em mal estado",
+        "reason2": "Não é o produto pedido",
+        "reason3": "Produto faltante",
+        "reason4": "Outro"
+      },
+      "empty_pages": {
+        "pending_fresh": {
+          "title": "Você não tem pedidos para validar!",
+          "message": "Aqui você verá todos os pedidos entregues que ainda não foram validados."
+        },
+        "pending": {
+          "title": "Continue assim!",
+          "message": "Você já validou todos os pedidos."
+        },
+        "validated_fresh": {
+          "title": "Você ainda não validou!",
+          "message": "Aqui você verá todos os pedidos que foram validados."
+        },
+        "search": {
+          "title": "Não foram encontrados resultados!",
+          "message": ""
+        }
+      }
+    },
+    "client": {
+      "address": "Endereço",
+      "code": "Código",
+      "email": "Email",
+      "legal_name": "Razão Social",
+      "name": "Nome",
+      "utid": "CUIT"
+    },
+    "delivery_point": {
+      "address": "Endereço",
+      "client": "Cliente",
+      "contact_name": "Nome de Contato",
+      "contact_phone": "Telefône de Contato",
+      "locality": "Zona",
+      "range_from": "Desde",
+      "range_to": "À",
+      "zip_code": "Código Postal"
+    },
+    "partner": {
+      "partner_type": {
+        "partner": "Associado",
+        "external": "Externo"
+      }
+    },
+    "order": {
+      "client": "Cliente",
+      "dirty_notification": "Alguns preços foram modificados recentemente, por favor confirme as mudanças para continuar",
+      "number": "Número",
+      "subtotal": "Subtotal",
+      "total": "Total",
+      "supplier_names": "%names% e mais %more%."
+    },
+    "order_item": {
+      "actions": "Ações",
+      "brand": "Marca",
+      "date": "Data",
+      "delivered_quantity": "Quantidade de Entrega",
+      "delivered_unit_price": "Preço Unitário de Entrega",
+      "family": "Família",
+      "time": "Hora",
+      "name": "Nome",
+      "ordered_quantity": "Quantidade Ordemada",
+      "ordered_unit_price": "Preço Unitário Ordemado",
+      "partner": "Proveedor",
+      "presentation": "Presentação",
+      "price": "Preço",
+      "product_family": "Família de Produto",
+      "product_subfamily": "Subfamília de Produto",
+      "quantity": "Quantidade",
+      "requested_quantity": "Quantidade de pedidos",
+      "requested_unit_price": "Preço unitário de pedido",
+      "sale_unit": "Unidade de Venda",
+      "shipped_quantity": "Quantidadee Enviada",
+      "shipped_unit_price": "Preço Unitário Enviado",
+      "total_price": "Preçio Total",
+      "unit": "Unidade",
+      "unit_price": "Preço Unitário"
+    },
+    "order_delivery": {
+      "cancel_reason": "Motivo de Cancelamento",
+      "cancel_comment": "Comentário de Cancelamento",
+      "cancelled": "Cancelado",
+      "client": "Cliente",
+      "date": "Data",
+      "delivery_date": "Data de Entrega",
+      "delivery_number": "Número de Entrega",
+      "delivery_point": "Ponto de Entrega",
+      "delivery_range": "Rango de Entrega",
+      "invoice": "Presupuesto",
+      "item": "Produto",
+      "items": "Produtos",
+      "moderated": "Moderado",
+      "moderator": "Aprobador",
+      "month": "Mes",
+      "number": "Número",
+      "order": "Pedido",
+      "ordered": "Ordemado",
+      "orderer": "Solicitante",
+      "order_creation_date": "Data Creacion de Pedido",
+      "order_moderated": "La Ordem ya fue moderada",
+      "partner": "Proveedor",
+      "purchase_date": "Data de compra",
+      "reject_reason": "Motivo de Rechazo",
+      "reject_comment": "Comentario del Rechazo",
+      "rejected": "Rechazado",
+      "requested": "Solicitado",
+      "return_reason": "Motivo de la Devolución",
+      "return_comment": "Comentario de Devolución",
+      "returned": "Devuelto",
+      "status": "Estado",
+      "subtotal": "Subtotal",
+      "thanks": "¡Muchas gracias!",
+      "total": "Total",
+      "tracking": "Seguimiento",
+      "tracking_number": "Número de Seguimiento",
+      "week": "Semana"
+    },
+    "product": {
+      "sales_unit": "Unidad de Venta"
+    },
+    "administration_mailer": null,
+    "buyer_mailer": {
+      "delivery_cancelled": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo de cancelamento",
+        "client": "Cliente",
+        "contact": "Contacto",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "message": "Su pedido <strong>#%delivery_number%</strong> ha sido <strong>cancelado.</strong>",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "subject": "Pedido #%delivery_number% Cancelado",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      },
+      "delivery_confirmed": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo de cancelamento",
+        "client": "Cliente",
+        "contact": "Contacto",
+        "datetime": "Data y Hora",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "email": "Email",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "sirs": "Sr(es)",
+        "subject": "Entrega Confirmada - Pedido #%delivery_number% - (%partner_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total",
+        "utid": "CUIT"
+      },
+      "delivery_modified": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo de cancelamento",
+        "client": "Cliente",
+        "contact": "Contacto",
+        "datetime": "Data y Hora",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "email": "Email",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "sirs": "Sr(es)",
+        "subject": "Entrega Modificada - Pedido #%delivery_number% - (%partner_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total",
+        "utid": "CUIT"
+      },
+      "delivery_ordered": {
+        "address": "Endereço",
+        "client": "Cliente",
+        "contact": "Contato",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "message": "Sr. cliente, seu pedido <strong>#%delivery_number%</strong> foi <span style=\"font-weight: bold;\">aprovado.</span><br/> Anexo enviamos a ordem de compra com os pedidos pertinentes.\n",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preçoo",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "subject": "Confirmação de Pedido #%delivery_number%",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      },
+      "delivery_rejected": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo da Rejeição",
+        "client": "Cliente",
+        "contact": "Contato",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "message": "El proveedor %partner_name% <strong>canceló</strong> la entrega del pedido <strong>#%delivery_number%</strong>",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentário",
+        "subject": "Entrega Cancelada - Pedido #%delivery_number% - (%partner_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      },
+      "order_requested": {
+        "address": "Endereço",
+        "client": "Cliente",
+        "contact": "Contato",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "email": "Email",
+        "greeting": "Att. Administração Extendeal",
+        "message": "Sr. cliente, seu pedido <strong>#%order_number%</strong> foi gerado e espera aprovação.<br/> Anexo enviamos a ordem de compra com os pedidos pertinentes.\n",
+        "orderer": "Solicitante",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentário",
+        "subject": "Pedido #%order_number% - Pendente de Aprovação",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      }
+    },
+    "customer_support_mailer": {
+      "missing_billing_data": {
+        "subject": "[AR] Problemas com informação do cliente.",
+        "message": "<p>É necessário completar a informação dados de faturamento de(dos) cliente/s <strong>(%clients_names%)</strong> corretamente para poder realizar uma compra e poder utilizar a plataforma em sua totalidade.</p>\n"
+      }
+    },
+    "deliveries_mailer": {
+      "delivery_cancelled": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo de Cancelamento",
+        "client": "Cliente",
+        "contact": "Contato",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "message": "O pedido <strong>#%delivery_number%</strong> para <strong>%client_name%</strong> solicitado por <strong>%orderer_name%</strong>, foi <strong style=\"color: #F00;\">cancelado</strong> pelo aprovador.",
+        "phone": "Telefone",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentário",
+        "subject": "Pedido #%delivery_number% Cancelado",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      },
+      "delivery_confirmed": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo de Cancelamento",
+        "client": "Cliente",
+        "contact": "Contacto",
+        "datetime": "Data e Hora",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "email": "Email",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "sirs": "Sr(es)",
+        "subject": "Entrega Confirmada - Pedido #%delivery_number% - (%partner_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total",
+        "utid": "CUIT"
+      },
+      "delivery_modified": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo de cancelamento",
+        "client": "Cliente",
+        "contact": "Contacto",
+        "datetime": "Data y Hora",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "email": "Email",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "sirs": "Sr(es)",
+        "subject": "Entrega Modificada - Pedido #%delivery_number% - (%partner_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total",
+        "utid": "CUIT"
+      },
+      "delivery_ordered": {
+        "subject": "Nuevo Pedido #%delivery_number% - Seguimiento - (%client_name%)"
+      },
+      "delivery_rejected": {
+        "address": "Endereço",
+        "cancel_reason": "Motivo de Rechazo",
+        "client": "Cliente",
+        "contact": "Contacto",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "message": "El proveedor %partner_name% <strong>canceló</strong> la entrega del pedido <strong>#%delivery_number%</strong>",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "subject": "Entrega Cancelada - Pedido #%delivery_number% - (%partner_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      },
+      "order_requested": {
+        "address": "Endereço",
+        "client": "Cliente",
+        "contact": "Contacto",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "email": "Email",
+        "greeting": "Atte. Administración Extendeal",
+        "message": "<p>Se solicitaron los siguientes Produtos a los asociados:</p>\n",
+        "orderer": "Solicitante",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "subject": "Pendiente de Aprobación - Seguimiento - Nuevo Pedido #%order_number% - (%client_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      }
+    },
+    "moderator_mailer": {
+      "order_requested": {
+        "address": "Endereço",
+        "buttons": {
+          "approve": "Aprovar",
+          "cancel": "Rejeitar",
+          "modify": "Modificar"
+        },
+        "client": "Cliente",
+        "contact": "Contacto",
+        "delivery_date": "Data de Entrega",
+        "delivery_point": "Ponto de Entrega",
+        "greeting": "Atte. Administración Extendeal",
+        "message": "<p>Prezado cliente, o usuario <strong>%orderer_name%</strong> solicitou a aprovação da Ordem de Compra <strong>#%order_number%.</strong><br/>Por favor escolha a ação adequada.</p>\n",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentario",
+        "subject": "'Pendente de Aprovação - Novo Pedido #%order_number% - (%orderer_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total"
+      }
+    },
+    "user_mailer": {
+      "reset_password_email": {
+        "body": "Si no solicitó el cambio de contraseña ignore este mensaje.",
+        "signature": "Atte. <br> Administración Extendeal\n",
+        "subject": "Recuperar Contraseña.",
+        "title": "Para reestablecer su contraseña, haga click en el siguiente link:"
+      },
+      "welcome_email": {
+        "welcome_to_extendeal": "¡Bienvenido a Extendeal!",
+        "body_part_1": "Para ingresar al sistema, acceda haciendo click en la Endereço %site_url% con su Endereço de e-mail %email% y la siguiente contraseña:",
+        "body_part_2": "Una vez ingresado al sistema, usted podrá modificar la contraseña asignada desde la configuración.",
+        "body_part_3": "Cualquier consulta y/o modificación necesaria debe comunicarse con %email%",
+        "regards": "Atte.",
+        "legal_terms": "Términos y condiciones",
+        "prImpostocy_policy": "Política de prImpostocidad",
+        "body": "Sr. cliente, fue dado de alta en el sistema de pedidos de Extendeal. Para ingresar, acceda a través de la Endereço %site_url% con su Endereço de e-mail %email% y la siguiente contraseña: <br> <br> <strong>%password%</strong> <br> <br> Una vez ingresado al sistema, usted puede modificar la contraseña asignada.\n",
+        "signature": "Atte. <br> Administración Extendeal\n",
+        "subject": "Alta de Usuario"
+      }
+    },
+    "sales_mailer": null,
+    "partner_mailer": {
+      "delivery_ordered": {
+        "address": "Endereço",
+        "buttons": {
+          "cancel": "Cancelar",
+          "confirm": "Confirmar",
+          "modify": "Modificar",
+          "reject": "Rechazar'",
+          "moderate": "Moderar O.C"
+        },
+        "contact": "Contacto",
+        "date_and_time": "Data y Hora",
+        "delivery_date": "Data de Entrega",
+        "email": "Email",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentário",
+        "sirs": "Sr(es)",
+        "subject": "Novo Pedido #%delivery_number% - (%client_name%)",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total",
+        "utid": "CUIT",
+        "order_received": "¡Orden de Compra recibida!",
+        "access_platform": "Para moderar la Orden de Compra acceda a la plataforma."
+      },
+      "delivery_returned": {
+        "address": "Endereço",
+        "buttons": {
+          "cancel": "Cancelar",
+          "confirm": "Confirmar"
+        },
+        "cancel_reason": "Motivo da Rejeição",
+        "comment": "Comentário",
+        "contact": "Contato",
+        "date_and_time": "Data e Hora",
+        "delivery_date": "Data de Entrega",
+        "delivery_date_estimated": "Data e Hora de Entrega Programada",
+        "delivery_requested_date": "Data e Hora da Solicitação",
+        "delivery_returned": "Pedido Rejeitado",
+        "email": "Email",
+        "family": "Família",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentário",
+        "sirs": "Sr(es)",
+        "status": "Estado",
+        "subject": "Pedido #%delivery_number% Rejeitado - %client_name%",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total",
+        "tracking": "Seguimento",
+        "utid": "CUIT",
+        "without_assign": "Sem Assignar"
+      },
+      "delivery_validated": {
+        "address": "Endereço",
+        "buttons": {
+          "cancel": "Cancelar",
+          "confirm": "Confirmar"
+        },
+        "contact": "Contacto",
+        "date_and_time": "Data e Hora",
+        "delivery_date": "Data de Entrega",
+        "delivery_datetime": "Data e Hora de Entrega",
+        "delivery_validated": "Pedido Validado",
+        "email": "Email",
+        "family": "Família",
+        "phone": "Telefône",
+        "plus_tax": " ",
+        "price": "Preço U.",
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "remark": "Comentário",
+        "requested_datetime": "Data e Horário da Solicitação",
+        "sirs": "Sr(es)",
+        "status": "Status",
+        "subject": "Pedido #%delivery_number% Validado - %client_name%",
+        "subtotal": "Subtotal",
+        "to": "a",
+        "total": "Total",
+        "tracking": "Seguimento",
+        "utid": "CUIT",
+        "without_assign": "Sem Assignar"
+      }
+    },
+    "decimal_point": ",",
+    "thousand_separator": ".",
+    "download_date": "Data do Download",
+    "plus_tax": "",
+    "modals": {
+      "alert_modal": {
+        "go_home": "Ir al Inicio",
+        "title": {
+          "delivery_confirm": "Confirmar O.C.",
+          "delivery_moderation": "Moderar O.C.",
+          "delivery_reject": "Rechazar O.C.",
+          "order_disapprove": "Desaprobar Pedido",
+          "order_approve": "Aprobar Pedido",
+          "order_moderated": "Moderar Pedido"
+        },
+        "content": {
+          "delivery_confirm": "La Orden de Compra #%delivery_number% ya ha sido confirmada.",
+          "delivery_moderation": "La Orden de Compra #%delivery_number% ya ha sido moderada.",
+          "delivery_reject": "La Orden de Compra #%delivery_number% ya ha sido rechazada.",
+          "order_disapprove": "O pedido #%number% foi desaprovado.",
+          "order_approve": "El pedido #%order_number% fue aprobado.",
+          "order_moderated": "O pedido #%order_number% ja foi moderado.",
+          "order_expired": "O pedido #%order_number% não pode ser aprovado porque as O.C. estavam vencidas."
+        }
+      },
+      "missing_billing_data": {
+        "title": "Falta de informação",
+        "body": "Seus dados fiscais não estão registrados corretamente, por esse motivo não poderá realizar nenhuma compra. Enviamos um email a operações para solucionar o problema."
+      },
+      "session_expired": {
+        "title": "Sessão expirada",
+        "body": "Não houve atividade por 10 minutos ou mais. Por favor, inicie sessão novamente."
+      },
+      "approve_order": {
+        "fail": "<p>Desculpe, ocorreu um Eero ao aprovar o pedido #%number%.</p></p>Por favor tente novamente ou comunique-se com <a href='mailto:%support%'>%support%</a></p>",
+        "title": "Aprovar pedido",
+        "success": "Seu pedido #%number% foi aprovado corretamente.",
+        "success_partially": "Seu pedido #%number% foi aprovado parcialmente corretamente.",
+        "order": "Pedido",
+        "total": "Total",
+        "partners": "Proveedores"
+      },
+      "mobile_comment": {
+        "title": "Comentario",
+        "add_comment": "Añadir Comentário"
+      },
+      "mobile_legal_name": {
+        "title": "Razão social"
+      },
+      "not_delivered": {
+        "title": "O.C. Não entregada",
+        "body": "A O.C. #%number% será moderada como Näo entregue.",
+        "success": "A O.C. #%number% foi moderada corretamente.",
+        "fail": "<p>Desculpe, ocorreu um erro ao moderar a ordem #%number%.</p><p>Por favor tente novamente ou comunique-se com <a href='mailto:%support%'>%support%</a></p>"
+      },
+      "repeat_delivery": {
+        "body": "<p>A Ordem de Compra será repetida #%number%.</p><p>Lembre-se de que se houver um pedido em curso, será descartado.</p>",
+        "fail": "<p>esculpe, ocorreu um erro ao repetir a ordem #%number%.</p></p>Por favor tente novamente ou comunique-se com <a href='mailto:%support%'>%support%</a></p>",
+        "title": "Repetir Ordem de Compra"
+      },
+      "confirm_delivery": {
+        "client": "Cliente",
+        "fail": "<p>Lo sentimos, ha ocurrido un error al confirmar la Orden de Compra #%number%.</p></p>Por favor reintente o comuníquese con <a href='mailto:%support%'>%support%</a></p>",
+        "order_delivery": "O.C.",
+        "title": "Confirmar Orden de Compra",
+        "total": "Total"
+      },
+      "disapprove_order": {
+        "add_comment": "Inserir comentário",
+        "error": "Por favor selecionar uma razão para continuar",
+        "fail": "<p>Desculpe, ocorreu um erro ao desaprovar o pedido #%number%.</p></p>Por favor tente novamente ou comunique-se com <a href='mailto:%support%'>%support%</a></p>",
+        "order": "Pedido",
+        "partners": "Proveedores",
+        "reason": "Motivo:",
+        "reason_1": "Valor excedido",
+        "reason_2": "Erro na Quantidade pedida",
+        "reason_3": "Discrepância no plazo de entrega",
+        "reason_4": "Outro",
+        "success": "O pedido #%number% foi desaprovado.",
+        "success_partially": "El pedido #%number% foi desaprovado parcialmente corretamente.",
+        "title": "Desaprovar Pedido",
+        "total": "Total"
+      },
+      "delete_delivery": {
+        "add_comment": "Inserir comentário",
+        "error": "Por favor selecionar uma razão para continuar",
+        "fail": "<p>Desculpe, ocorreu um erro ao eliminar a ordem #%number%.</p></p>Por favor tente novamente ou comunique-se com <a href='mailto:%support%'>%support%</a></p>",
+        "order": "Ordem de Compra",
+        "partner": "Proveedor",
+        "reason": "Motivo:",
+        "reason_1": "Valor excedido",
+        "reason_2": "Erro na Quantidade pedida",
+        "reason_3": "Discrepância no plazo de entrega",
+        "reason_4": "Outro",
+        "success": "A ordem #%number% foi eliminada corretamente.",
+        "title": "Eliminar Ordem de Compra",
+        "total": "Total"
+      },
+      "customer_support": {
+        "attach": "Anexar arquivo",
+        "description": "Si é um erro, por favor descreva-o: <br> Passos para reproduzir o erro, resultado obtido, resultado esperado e se possível anexe uma captura de tela com o erro/problema. No caso de ser uma pergunta de funcionamento, por favor explique com detalhe o que necessita saber.",
+        "fail": "<p>Sua pregunta não pôde ser enviada.</p><p> por favor tente novamente ou envie um email a <a href='mailto:%support%'>%support%</a>.</p>",
+        "intro": "Escreva sua pregunta no formulário, receberá uma resposta em breve.",
+        "message": "Escreva aqui sua mensagem...",
+        "message_error": "Por favor faça uma breve descrição",
+        "select_subject": "Selecione o assunto...",
+        "subject": "Assunto",
+        "subject_error": "Por favor selecione um assunto",
+        "success": "Sua pergunta foi enviada com sucesso.",
+        "title": "Atendimento ao cliente",
+        "message_label": "Mensagem"
+      },
+      "return_delivery": {
+        "add_comment": "Inserir comentário",
+        "error": "Por favor selecionar uma razão para continuar",
+        "fail": "<p>Lo sentimos, ha ocurrido un error al devolver la orden #%number%.</p><p>Por favor reintente o comuníquese con <a href='mailto:%support%'>%support%</a></p>",
+        "order_delivery": "Ordem de compra",
+        "partner": "Proveedor",
+        "reason": "Motivo:",
+        "reason_1": "Produtos em mal estado",
+        "reason_2": "Não corresponde ao produto pedido",
+        "reason_3": "Produto faltante",
+        "reason_4": "Outro",
+        "success": "La O.C. #%number% fue devuelta correctamente.",
+        "title": "Devolver Orden de Compra",
+        "total": "Total"
+      },
+      "reject_delivery": {
+        "add_comment": "Inserir comentário",
+        "client": "Cliente",
+        "error": "Por favor selecionar uma razão para continuar",
+        "fail": "<p>Lo sentimos, ha ocurrido un error al rechazar la orden #%number%.</p></p>Por favor reintente o comuníquese con <a href='mailto:%support%'>%support%</a></p>",
+        "order_delivery": "Ordem de compra",
+        "partner": "Proveedor",
+        "reason": "Motivo:",
+        "reason_1": "Produtos em mal estado",
+        "reason_2": "Não corresponde ao produto pedido",
+        "reason_3": "Produto faltante",
+        "reason_4": "Outro",
+        "success": "A ordem #%number% foi rejeitada corretamente.",
+        "title": "Rechazar Ordem de Compra",
+        "total": "Total"
+      },
+      "discard_order": {
+        "title": "Descartar pedido",
+        "message": "Seu pedido em curso será descartado, pendendo todas  as modificações realizadas no carrinho."
+      },
+      "validate_delivery": {
+        "fail": "<p>Desculpe, ocorreu um erro ao validar a ordem #%number%.</p></p>Por favor tente novamente ou comunique-se com <a href='mailto:%support%'>%support%</a></p>",
+        "order_delivery": "Ordem de Compra",
+        "partner": "Proveedor",
+        "invoice_number": "N° de Nota Fiscal",
+        "select_receive_time": "Selecione a Data e hora de recepção:",
+        "success": "A O.C. #%number% foi validada corretamente.",
+        "title": "Validar Ordem de Compra",
+        "total": "Total"
+      },
+      "legal_terms": {
+        "title": "PrImpostocidade e Condições",
+        "accepting": "Aceito"
+      },
+      "delete_item_set": {
+        "title": "Eliminar",
+        "message": "O proveedor será eliminado de seu pedido.",
+        "message_with_order": "Ao eliminar o último proveedor, o pedido em curso será descarto junto às modificações realizadas.",
+        "fail": "<p>LDesculpe, ocorreu um erro ao validar a ordem .</p></p>Por favor tente novamente ou comunique-se com <a href='mailto:%support%'>%support%</a></p>",
+        "success": "A ordem foi eliminada corretamente."
+      },
+      "ordering_error": {
+        "attention": "Atención",
+        "blocking_message": "Las O.C. serán eliminadas. Los productos dentro de la misma no serán solicitados al proveedor.",
+        "delete_deliveries": "Eliminar O.C.",
+        "request_message": "El pedido #%number% fue parcialmente enviado. Si continúa puede que algunos aprobadores no sean notificados.",
+        "unblocking_message": "Las O.C. fueron parcialmente enviadas. Si continúa puede que algunos usuarios no sean notificados.",
+        "purchase_order": "Orden de Compra:",
+        "to_partner": "Al Proveedor:"
+      },
+      "add_product_error": {
+        "add_product": "Adicionar produto",
+        "add_error_message": "Desculpe, ocorreu um erro ao adicionar o produto ao carrinho. Por favor, tente novamente."
+      }
+    },
+    "loading": {
+      "approving_order": "Aprovando Pedido...",
+      "cart": "Carregando sua ordem...",
+      "charts": "Carregando gráficos...",
+      "confirming_delivery": "Confirmando Ordem de Compra...",
+      "default": "Carregando...",
+      "deleting_delivery": "Eliminando Ordem de Compra...",
+      "deliveries": "Carregando O.C. ...",
+      "delivery_points": "Carregando ptos de entrega...",
+      "disapproving_order": "Desaprobando Pedido...",
+      "discarding_order": "Descartando Pedido...",
+      "information": "Carregando informação...",
+      "moderating_order": "Moderando Pedido...",
+      "new_order": "Carregando Efetuar pedido...",
+      "requesting_order": "Realizando Pedido...",
+      "orders": "Carregando pedidos...",
+      "products": "Carregando Produtos...",
+      "repeating_delivery": "Repitindo Ordem de Compra...",
+      "step_2": "Carregando Paso 2...",
+      "step_3": "Carregando Paso 3...",
+      "step_4": "Realizando pedido...",
+      "sending_inquiry": "Enviando pergunta...",
+      "statistics": "Carregando Estatísticas...",
+      "summary": "Carregando Resumo...",
+      "validation": "Carregando Validação...",
+      "validating_delivery": "Validando Ordem de Compra...",
+      "rejecting_delivery": "Rechazando Ordem de Compra...",
+      "returning_delivery": "Retornando Orden de Compra...",
+      "deleting_item_set": "Eliminando...",
+      "discarding": "Descartando...",
+      "selecting_delivery_point": "Seleccionando Punto de Entrega...",
+      "delivery_detail": "Cargando detalhe..."
+    },
+    "delivery_point_sidebar": {
+      "all": "Todos os ptos de entrega"
+    },
+    "ordering": {
+      "generating_pdf": "Generación de PDF",
+      "moderator_mail": "Envío de mail a aprobador %name% (%email%)",
+      "supplier_mail": "Envío de mail a proveedor %name% (%email%)",
+      "supplier_sms": "Envío de SMS a aprobador %name% (%number%)",
+      "buyer_mail": "Envío de mail a solicitante %name% (%email%)",
+      "tracking_mail": "Envío de mail de seguimiento",
+      "if_errors_continue": "Si los errores continúan, comuníquese con <button data-action='open-customer-support-modal' data-reason='3' class='order-result__message--link'>Atención al cliente</button>",
+      "to_report_errors": "Para informar los errores comuníquese con <button data-action='open-customer-support-modal' data-reason='%reason%' class='order-result__message--link'>Atención al cliente</button>",
+      "request": {
+        "error": "Error en el envío del pedido",
+        "progress": "Enviando el pedido a los aprobadores",
+        "success": "Pedido #%number% enviado correctamente a aprobadores.",
+        "feedback": {
+          "success": {
+            "heading": "Seu pedido #%number% está pendente de aprovação!",
+            "subtitle": "O pedido <strong>se vencerá</strong> se não for aprovado antes de <strong>%days%</strong> às <strong>23:59 hs</strong>.",
+            "subtitle_today": "O pedido <strong>se vencerá hoje</strong> se não for aprovado antes das <strong>23:59 hs</strong>.",
+            "message": "Os aprovadores responsáveis são: %moderators%.",
+            "message_singular": "O aprovador responsável é: %moderators%."
+          },
+          "fail": {
+            "heading": "¡Su pedido no ha podido ser solicitado!",
+            "message": "No se ha podido notificar a los aprobadores correspondientes, tiene la posibilidad de rehacer su pedido, descartarlo o generar uno nuevo."
+          }
+        }
+      },
+      "checkout": {
+        "waiting": "Esperando para enviar O.C. al proveedor %supplier%",
+        "progress": "Enviando O.C. al proveedor %supplier%...",
+        "success": "O.C. #%number% enviada correctamente.",
+        "error": "Error en el envío de O.C. al proveedor %supplier%",
+        "feedback": {
+          "success": {
+            "heading": "Seu pedido #%number% foi realizado!",
+            "message": "Seu pedido foi finalizado, o mesmo foi enviado aos fornecedores e aguarda a confirmação dos mesmos."
+          },
+          "fail": {
+            "heading": "¡Su pedido no ha podido ser realizado!",
+            "message": "No se ha podido notificar a los proveedores correspondientes, tiene la posibilidad de rehacer su pedido, descartarlo o generar uno nuevo."
+          }
+        }
+      },
+      "approve": {
+        "feedback": {
+          "success": {
+            "heading": "¡El pedido #%number% ha sido aprobado!",
+            "message": "Ha aprobado su pedido, el mismo fue enviado a los solicitantes correspondientes. Ya puede generar un nuevo pedido."
+          },
+          "fail": {
+            "heading": "¡El pedido #%number% no ha podido ser aprobado!",
+            "message": "No se ha podido notificar a los proveedores correspondientes, tiene la posibilidad de rehacer su pedido, descartarlo o generar uno nuevo."
+          }
+        }
+      }
+    },
+    "delivery_details": {
+      "orderer_information": "Información del Solicitante",
+      "moderator_information": "Información del Aprobador",
+      "partner_information": "Información del Proveedor",
+      "manager_information": "Información del Manager",
+      "activity": "Actividad",
+      "oc_activity": "Actividad de la O.C.",
+      "oc_detail": "Detalhe de O.C.",
+      "supplier": "Proveedor",
+      "delete_product": "Eliminar Producto",
+      "enable_product": "Habilitar Producto",
+      "comment": "Comentario",
+      "details": "Detalhe"
+    },
+    "words": {
+      "and": "y",
+      "day": "día",
+      "days": "días",
+      "by": "Por",
+      "extendeal_process": "Proceso Extendeal",
+      "through_l": "l",
+      "through_extendeal": "por",
+      "through_mail": "por",
+      "extendeal" : "Extendeal",
+      "mail" : "mail",
+      "to_partner": "al proveedor"
+    },
+    "entities": {
+      "supplier": "Proveedor"
+    }
+  }

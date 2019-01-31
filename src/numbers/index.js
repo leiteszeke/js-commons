@@ -5,14 +5,32 @@ let listeners = {
     'maskFloat': []
 };
 
-module.exports = {
-    getPatterns() {
-        let patterns = {};
+const Numbers = {
+    setConfig() {
+        numeral.locales['en'] = {
+            delimiters: {
+                thousands: i18n.translate('format.money.thousands_separator'),
+                decimal: i18n.translate('format.money.decimals_separator'),
+            },
+            abbreviations: {
+              thousand: 'k',
+              million: 'm',
+              billion: 'b',
+              trillion: 't'
+            },
+            currency: {
+                symbol: i18n.translate('format.money.currency'),
+            }
+        };
 
+        numeral.locale('en');
+    },
+
+    getPatterns() {
         const dec = i18n.translate('format.money.decimals_separator');
         const thou = i18n.translate('format.money.thousands_separator');
 
-        patterns = {
+        const patterns = {
             decimalSeparator: new RegExp(dec.replace('.', '\\.')),
             thousandSeparator: new RegExp(thou.replace('.', '\\.'), 'g'),
         };
@@ -34,11 +52,11 @@ module.exports = {
      * @param {Array} args function's arguments
      */
     curry(f, n = undefined, args = []) {
-        if ( "undefined" === typeof n ) {
+        if ("undefined" === typeof n) {
             n = f.length;
         }
 
-        return args.length < n ? c => this.curry(f, n, args.concat(c)) : f(...args);
+        return args.length < n ? c => Numbers.curry(f, n, args.concat(c)) : f(...args);
     },
 
     /**
@@ -55,32 +73,19 @@ module.exports = {
         typeof value === 'undefined' && (value = input.value);
         typeof mask === 'undefined' && (mask = `0,0[.]0[${'0'.repeat(decimals - 1)}]`);
 
-        if (typeof numeral.locales['default'] === 'undefined') {
-            numeral.register('locale', 'default', {
-                delimiters: {
-                    thousands: i18n.translate('format.money.thousands_separator'),
-                    decimal: i18n.translate('format.money.decimals_separator'),
-                },
-                abbreviations: {},
-                currency: {
-                    symbol: i18n.translate('format.money.currency')
-                }
-            });
-        }
-
-        numeral.locale('default');
+        Numbers.setConfig();
 
         value = numeral(value).value();
 
-        if ( !isNaN(value) ) {
+        if (!isNaN(value)) {
 
-            if ( value > 999999999.999999 ) {
+            if (value > 999999999.999999) {
                 value = 999999999.999999;
             }
 
             const power = Math.pow(10, decimals);
-            const formattedValue = numeral( Math.trunc(value * power) / power ).format(mask);
-            const cursorPosition = this.boundNumber(input.selectionStart + formattedValue.length - input.value.length, 0, formattedValue.length);
+            const formattedValue = numeral(Math.trunc(value * power) / power).format(mask);
+            const cursorPosition = Numbers.boundNumber(input.selectionStart + formattedValue.length - input.value.length, 0, formattedValue.length);
 
             input.value = formattedValue;
             input.defaultValue = formattedValue;
@@ -115,10 +120,10 @@ module.exports = {
     */
     maskFloat(input, { onUpdate = false, decimals = 3, maskTo } = {}) {
         // Make sure the patterns exist
-        const patterns = this.getPatterns();
+        const patterns = Numbers.getPatterns();
 
         // Partially bind arguments to the mask function and store the curried result in mask
-        const maskIt = this.curry(this.mask.bind(this), 3)(input, { decimals, maskTo });
+        const maskIt = Numbers.curry(Numbers.mask.bind(this), 3)(input, { decimals, maskTo });
 
         const changeListener = () => maskIt(undefined)
         const inputListener = (e) => {
@@ -147,7 +152,7 @@ module.exports = {
             }
 
             // mask the input's new value
-            this.mask(input); //maskIt(value);
+            Numbers.mask(input); //maskIt(value);
             updateCallback(oldValue, true);
         }
 
@@ -176,14 +181,19 @@ module.exports = {
     },
 
     demaskFloat(value) {
+        Numbers.setConfig();
         return numeral(value).value();
     },
 
-    formatNumber() {
-
+    formatNumber(value) {
+        Numbers.setConfig();
+        return numeral(value).format('0,0[.]0[00]')
     },
 
-    deformatNumber() {
-
+    deformatNumber(value) {
+        Numbers.setConfig();
+        return numeral(value).value();
     }
-};
+}
+
+module.exports = Numbers;

@@ -1,21 +1,21 @@
 {
-    "country": {
-      "name": "Argentina",
-      "city": "C.A.B.A",
-      "state": "Buenos Aires",
-      "iso_code": "AR"
-    },
-    "datetime": {
-      "timezone": "America/Argentina/Buenos_Aires",
-      "utc": -3
-    },
-    "format": {
-      "money": {
-        "currency": "$",
-        "decimals": 2,
-        "decimals_separator": ",",
-        "thousands_separator": ".",
-        "regex": "0,0[.]000"
-      }
+  "country": {
+    "name": "Argentina",
+    "city": "C.A.B.A",
+    "state": "Buenos Aires",
+    "iso_code": "AR"
+  },
+  "datetime": {
+    "timezone": "America/Argentina/Buenos_Aires",
+    "utc": -3
+  },
+  "format": {
+    "money": {
+      "currency": "$",
+      "decimals": 2,
+      "decimals_separator": ",",
+      "thousands_separator": ".",
+      "regex": "0,0[.]000"
     }
   }
+}

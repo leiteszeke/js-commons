@@ -1,3 +1,2198 @@
 {
-
+  "actions": {
+    "accept": "Accept",
+    "apply": "Apply",
+    "approve": "Approve",
+    "back": "Back",
+    "back_to_cart": "Back to step 1",
+    "cancel": "Cancel",
+    "change": "Change",
+    "close": "close",
+    "comment": "Commment",
+    "confirm": "Confirm",
+    "continue_anyway": "Continue anyway",
+    "create": "Create",
+    "delete": "Delete",
+    "delete_deliveries_with_errors": "Delete deliveries with errors to continue",
+    "delete_to_continue": "Delete to continue",
+    "deny": "Deny",
+    "disapprove": "Disapprove",
+    "discard": "Discard",
+    "discard_products": "Discard Products",
+    "do": "Do",
+    "down": "Down",
+    "download": "Download",
+    "eliminate": "Delete",
+    "execute": "Execute",
+    "exit": "Exit",
+    "finish": "Finish",
+    "filter": "Filter",
+    "first": "First",
+    "generate": "Generate",
+    "go_to_summary": "Go to summary",
+    "in": "in",
+    "last": "Last",
+    "loading": "Loading",
+    "new_order": "New order",
+    "new": "New",
+    "next": "Next",
+    "no_results": "No results found.",
+    "ok": "Ok",
+    "open": "Open",
+    "prev": "Prev.",
+    "previous": "Previous",
+    "redo": "Redo",
+    "reject": "Reject",
+    "repeat": "Repeat",
+    "repeat_order": "Repeat order",
+    "retry": "Retry",
+    "return": "Return",
+    "send": "Send",
+    "search": "Search",
+    "see_more": "See more",
+    "select": "Select",
+    "turn_back": "Return",
+    "undo": "Undo",
+    "up": "Up",
+    "upload": "Upload",
+    "validate": "Validate",
+    "dont_show_again": "Do not show again",
+    "understood": "Understood"
+  },
+  "roles": {
+    "moderator": "Moderator",
+    "buyer": "Buyer",
+    "auditor": "Auditor",
+    "partner": "Partner",
+    "validator": "Validator",
+    "manager": "Manager",
+    "admin": "Admin",
+    "partner_manager": "Partner Manager"
+  },
+  "options": {
+    "do_not_show_again": "Do not show again"
+  },
+  "buttons": {
+    "understood": "Understood"
+  },
+  "admin": {
+    "delivery": {
+      "comment": {
+        "state": {
+          "resolved": "Resolved",
+          "unresolved": "Unresolved"
+        }
+      }
+    },
+    "login": {
+      "enter": "Enter",
+      "error": "Invalid username or password..",
+      "password": "Password",
+      "user": "User"
+    },
+    "menu": {
+      "configuration": "Configuration",
+      "clients": "Clients",
+      "groups": "Groups",
+      "logout": "Exit",
+      "deliveries": "Order Deliveries",
+      "orders": "Pedidos",
+      "partners": "Partners",
+      "products": "Products",
+      "support": "Support",
+      "users": "Users",
+      "families": "Families"
+    },
+    "support": {
+      "attach": "Attach file",
+      "body": "Type your request on the following space. You will be receiving a reply shortly.",
+      "buttons": {
+        "cancel": "Cancel",
+        "ready": "Ready",
+        "send": "Send"
+      },
+      "message": "If it is a mistake, please describe:<br>Steps to reproduce it, result obtained, expected result and, if possible, attache a screenshot to the error/problem. If it is an operation's question, please explain in detail what you need to know.",
+      "textarea": "Message",
+      "textarea_message": "Write your message here...",
+      "thanks": "Thank you for using our system.",
+      "title": "Customer Service",
+      "title_break": "Customer <br> Service",
+      "subject": "Subject",
+      "subject_holder": "Select the subject..."
+    },
+    "products": {
+      "id": "ID",
+      "family": "Family",
+      "name": "Name",
+      "presentation": "Presentation",
+      "sales_unit": "Sales unit",
+      "brand": "Brand",
+      "supplier": "Supplier",
+      "partner": "Partner",
+      "base_price": "Product Price",
+      "unit_price": "Unit price",
+      "fractionable": "Fractionable",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "client": {
+      "billing_data": {
+        "create": {
+          "success": "¡Los datos de facturación se crearon éxitosamente!"
+        },
+        "remove": {
+          "confirmation": "¿Estás seguro que querés eliminar estos datos de facturación?",
+          "success": "¡Los datos de facturación se eliminaron éxitosamente!"
+        },
+        "update": {
+          "success": "¡Los datos de facturación se actualizaron éxitosamente!"
+        }
+      },
+      "delivery_point": {
+        "create": {
+          "success": "Nuevo punto de entrega se creó éxitosamente!"
+        },
+        "remove": {
+          "confirmation": "¿Estás seguro que querés eliminar este punto de entrega?",
+          "success": "¡El punto de entrega se eliminó éxitosamente!"
+        },
+        "update": {
+          "success": "¡El punto de entrega se actualizó éxitosamente!"
+        }
+      },
+      "price_list": {
+        "update": {
+          "success": "La lista de precios ha sido cargada correctamente",
+          "error": "Error al actualizar la lista de precios"
+        }
+      }
+    },
+    "families": {
+      "id": "Id",
+      "name": "Name",
+      "icon": "Icon",
+      "show_enable_picture": "Show picture"
+    },
+    "partner" : {
+      "product_list_upload" : {
+        "entities" : {
+          "name" : "Product name",
+          "unit_price" : "Unit price",
+          "base_price" : "Base price",
+          "sales_unit" : "Sales unit",
+          "fractionable" : "Fractionable",
+          "key" : "Id"
+        },
+        "success" : {
+          "message" : "Product list successfully uploaded"
+        },
+        "server_error" : {
+          "title" : "Error in Product List Upload",
+          "message" : "If the problems persist, communicate with support@extendeal.com"
+        },
+        "file_not_selected" : {
+          "title" : "Product list not selected",
+          "message" : "First you must select a list of products to proceed to upload it"
+        },
+        "validation" : {
+          "validation_error" : "Error in product list validation",
+          "numeric" : "The price of the product must be numeric",
+          "exists" : "The %entity% is invalid",
+          "boolean" : "The column %entity% can only have 1 or 0",
+          "required" : "The field %entity% is required",
+          "min": {
+            "numeric" : "The %entity% must be greater than 0.01"
+          }
+        }
+      }
+    }
+  },
+  "alerts": {
+    "price_update": {
+      "title": "Price list update",
+      "content": "The updated products are shown in the cart with a yellow notification.",
+      "help": "Products with a yellow mark have recently changed their price."
+    },
+    "modal": {
+      "price_update": {
+        "title": "Price modification alert",
+        "content": "A price actualization of your products has been made, they will be seen on your cart. You can keep on buying or discard your current order."
+      },
+      "discard_product": {
+        "title": "Discard products",
+        "content": "All the products whose prices have been modified will be discarded from the order."
+      },
+      "eight_orders_alert": {
+        "title": "last 8 orders",
+        "content": "Visualize the quantities of the products ordered in the last eight orders identified with their issue date."
+      },
+      "news_alert": {
+        "title": "Cart: Locate product",
+        "content": "Learn about the new way to locate a product from the Shopping Cart. Position yourself on the product with the mouse and click on the magnifying glass to activate the search engine with that product."
+      },
+      "cart_alert": {
+        "title": "Cart",
+        "content": "Now during your purchase, you will have the possibility to hide or visualize the Cart by clicking on the icon above."
+      },
+      "new_aesthetic": {
+        "title": "New aesthetics",
+        "page_1": "We renewed our aesthetics for easier and clearer navigation. Now you can see the Sale point and the Delivery point with which you are interacting.",
+        "page_2": "You can also view the new status iconography in the Purchase Orders, which will make it easier to track them.",
+        "mobile": {
+          "page_1": "We renewed our aesthetics for easier and clearer navigation."
+        }
+      },
+      "new_aesthetic_delivery_details": {
+        "page_1": {
+          "title": "New Purchase Order details",
+          "message": "Now, You can access he information of a Purchase Order in dynamic and organized manner. On one side, you will see the general information and the product table. On the other, a comment, the activity and the supplier's data.",
+          "mobile": "You can see all the information in the tab \"Details\", the moderations of the Purchase Order in \"Activity\" or the supplier's data in \"Supplier\"."
+        },
+        "page_2": {
+          "title": "Tracking number",
+          "message": "Hover the mouse over the tracking number, a button with a pencil will appear, click on it to edit. Then assign a number, accept to save it and done!",
+          "mobile": "Select the field and complete the modal with a tracking number. Accept to save and done!"
+        },
+        "page_3": {
+          "title": "Purchase Order activity",
+          "message": "You can see the information of the users or suppliers that moderate a Purchase Order. Hover the mouse over their name and a card with the contact information will appear.",
+          "mobile": "You can see the information of the users or suppliers that moderate an Purchase Order by selecting the their name."
+        },
+        "page_4":{
+          "title": "Purchase Order activity",
+          "message": "Now you can download the original PDF of a Purchase Order that was moderated. Hover over the activity with the mouse and a menu of options will appear. Click on it to download the PDF.",
+          "mobile": "Now you can download the original PDF of an Purchase Order which was moderate by selecting the options menu."
+        }
+      }
+    }
+  },
+  "company": {
+    "name": "Extendeal",
+    "sign": {
+      "address": "9700 Collins Av. Suite 243, Florida, USA",
+      "email": "orders.us@extendeal.com",
+      "phone": "+1 305 742 9815"
+    }
+  },
+  "country": {
+    "name": "U.S.A",
+    "city": "Florida",
+    "state": "Miami",
+    "iso_code": "US"
+  },
+  "errors": {
+    "back": "Back",
+    "not_found": {
+      "title": "Sorry, we have not found the page you are looking for.",
+      "try_again": "To solve the problem try to reload the page. If this persist, return to the platform."
+    },
+    "access_denied": {
+      "title": "Restricted access",
+      "message": ""
+    },
+    "internal": {
+      "title": "Sorry, there was an error.",
+      "try_again": "To solve the problem try to reload the page. If this persists, report it to the support area (%email%).",
+      "report": "Report"
+    },
+    "not_compatible": {
+      "title": "Browser not compatible!",
+      "try_again": "You have an outdated browser version. To continue you must update your browser.",
+      "update": "Update",
+      "back": "Back"
+    }
+  },
+  "files": {
+    "delivery": {
+      "invoice": {
+        "pdf": "Extendeal - Order #%delivery_number%.pdf",
+        "xls": "Extendeal - Order #%delivery_number%.xls",
+        "xlsx": "Extendeal - Purchase order #%delivery_number%.xlsx"
+      },
+      "title": "Extendeal - Order #%delivery_number%"
+    },
+    "order": {
+      "invoice": {
+        "pdf": "Extendeal - Order #%order_number%.pdf",
+        "xls": "Extendeal - Order #%order_number%.xls"
+      },
+      "title": "Extendeal - Order #%order_number%"
+    }
+  },
+  "summary": {
+    "buttons": {
+      "approve": "Approve",
+      "cancel": "Cancel",
+      "disapprove": "Disapprove",
+      "download_excel": "Download XLS",
+      "download_pdf": "Download Invoice",
+      "modify": "Edit"
+    },
+    "table": {
+      "order_delivery": "Purchase order",
+      "delivery_date": "Delivery Date",
+      "delivery_time": "Delivery Time",
+      "delivery_num": "P.O. Number",
+      "partner": "Partner",
+      "plus_tax": "+ VAT",
+      "status": "Status",
+      "total": "Total"
+    },
+    "tabs": {
+      "all": "All orders",
+      "dismissed": "Dismissed",
+      "history": "Deliveries history",
+      "min": {
+        "all": "All",
+        "dismissed": "Dismissed",
+        "history": "History",
+        "moderatable": "Pending",
+        "next": "Next deliveries"
+      },
+      "moderatable": "Pending moderation",
+      "next": "Next deliveries",
+      "search": {
+        "requested-orders": "Search by order number, supplier or status...",
+        "next-deliveries": "Search by P.O. number, supplier or status...",
+        "deliveries-history": "Search by P.O. number, supplier or status...",
+        "dismissed-deliveries": "Search by P.O. number, supplier or status...",
+        "all-deliveries": "Search by P.O. number, supplier or status..."
+      }
+    },
+    "tooltip": {
+      "approve": "Approve",
+      "disapprove": "Disapprove",
+      "reject_delivery": "Cancel Delivery",
+      "delete_delivery": "Delete Order",
+      "download_excel": "Download XLS",
+      "download_pdf": "Download PDF",
+      "enable": "Enable",
+      "modify": "Modify",
+      "save_for_later": "Save for Later",
+      "view_detail": "View detail"
+    },
+    "filters": {
+      "partner": "Partner",
+      "date": "Delivery date",
+      "download_all_excel": "Download all the P.O. in CSV Excel",
+      "time": "Delivery time",
+      "status": "Status",
+      "orderer": "Orderer",
+      "moderator": "Moderator",
+      "all_m": "All",
+      "all_f": "All",
+      "date_from": "From",
+      "date_to": "To",
+      "product_family": "Family",
+      "range": "Range"
+    },
+    "swipe_feature": {
+      "title": "Swipe nas abas",
+      "body": "Agora você tem a possibilidade de observar todas as abas com uma simples ação de uma forma interatImposto."
+    },
+    "empty_pages": {
+      "pending_fresh": {
+        "title": "You do not have any orders to approve!",
+        "message": "Here you will see all the orders that orderers realize."
+      },
+      "pending": {
+        "title": "Good job!",
+        "message": "You have approved all the pending orders."
+      },
+      "next": {
+        "title": "You have no pending deliveries! Order products from your suppliers.",
+        "message": "Here you will see all the Purchase Orders with future delivery dates."
+      },
+      "history": {
+        "title": "You have not received any deliveries yet! Order products from your suppliers.",
+        "message": "Here you will see all the Purchase Orders that has been delivered."
+      },
+      "dismissed": {
+        "title": "What effectiveness!",
+        "message": "Here you will find all the Purchase Orders that will not be delivered."
+      },
+      "all_fresh": {
+        "title": "You have not ordered any products yet!",
+        "message": "Here you will find 100% of the realized Purchase Orders."
+      },
+      "search": {
+        "title": "No results found!",
+        "message": " "
+      }
+    },
+    "orders_file_name": "Order list Extendeal",
+    "requested_by": "Requested by",
+    "requested_day": "Day",
+    "to_partners": "To Partners"
+  },
+  "invoices": {
+    "address": "Address",
+    "client": "Client",
+    "contact": "Contact",
+    "currency": "Currency",
+    "delivered_family": "Delivered family",
+    "delivery_date": "Delivery date",
+    "delivery_point": "Delivery point",
+    "delivery_point_address": "Address",
+    "locality": "Locality",
+    "invoice_number": "Invoice Number",
+    "order_number": "Order Number",
+    "phone": "Phone",
+    "plus_tax": " + VAT",
+    "price": "Price",
+    "product": "Product",
+    "quantity": "Quantity",
+    "remark": "Comment",
+    "requested_at": "Requested at",
+    "subtotal": "Subtotal",
+    "to": "to",
+    "total": "Total",
+    "tracking": "Tracking",
+    "tracking_number": "Tracking Number",
+    "unit_price": "Unit price",
+    "user": "User",
+    "without_assign": "Without assign",
+    "zip": "Zip Code"
+  },
+  "datetime": {
+    "date": {
+      "day": "d",
+      "daysMin": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+      "day_month": {
+        "dash": "m-d",
+        "slash": "m/d",
+        "slash_moment": "MM / DD"
+      },
+      "full": {
+        "dash": "m-d-Y",
+        "dash_moment": "MM-DD-YYYY",
+        "slash": "m/d/Y",
+        "slash_mask": "00/00/0000",
+        "slash_moment": "MM/DD/YYYY",
+        "slash_datepicker": "mm/dd/yyyy",
+        "slash_placeholder": "--/--/----"
+      },
+      "month": "m",
+      "month_year": {
+        "dash": "m-Y",
+        "slash": "m/Y"
+      },
+      "year": "Y"
+    },
+    "datetime": {
+      "dash": "m-d-Y H:i:s",
+      "dash_moment": "MM-DD-YYYY HH:mm",
+      "slash": "m/d/Y H:i:s"
+    },
+    "header": {
+      "full": "%full_day%, %month_name% %day_number%, %full_year%"
+    },
+    "lang": "en",
+    "time": {
+      "hour": "H",
+      "hour_minutes": "H:i",
+      "hour_minutes_moment": "HH:mm",
+      "hour_minutes_moment_hs": "HH:mm \\h\\s",
+      "full": "H:i:s",
+      "minutes": "i",
+      "minutes_seconds": "i:s",
+      "seconds": "s",
+      "at": "at",
+      "hs": "H:i \\h\\s",
+      "hs_placeholder": "--:-- hs"
+    },
+    "timezone": "America/New_York"
+  },
+  "means_of_payment": {
+    "current_acount": "Current Account"
+  },
+  "money": {
+    "currency": "US$",
+    "decimals": 2,
+    "decimals_separator": ".",
+    "thousands_separator": ","
+  },
+  "sections": {
+    "administrator": "Administrator",
+    "change_password": "Change Password",
+    "clients": "Clients",
+    "configuration": "Configuration",
+    "contact": "Contact",
+    "create_order": "New order",
+    "customer_support": "Clients support",
+    "customer_support_break": "Clients <br> support",
+    "dashboard": "Dashboard",
+    "tailormade": "Tailor-made",
+    "inbox": "Inbox",
+    "delivery_points": "Delivery Points",
+    "efficient_buy": "Eficient Buy",
+    "groups": "Groups",
+    "help_center": "Help center",
+    "help": "Help",
+    "login": "Login",
+    "logout": "Logout",
+    "news": "News",
+    "orders": "Orders",
+    "orders_in_one_place": "All your orders in one place",
+    "partners": "Partners",
+    "partners_system": "Partners system",
+    "price_list": "Price List",
+    "products": "Products",
+    "quotient": "Quotient",
+    "register": "Register",
+    "settings": "Settings",
+    "statistics": "Statistics",
+    "summary": "Summary",
+    "support": "Support",
+    "supplier_system": "Supplier's System",
+    "user_panel": "User panel",
+    "users": "Users",
+    "validation": "Validation",
+    "modify_order": "Modify",
+    "order_confirmation": "Order Confirmation"
+  },
+  "statuses": {
+    "cancelled": "Cancelled",
+    "closed": "Closed",
+    "confirmed": "Confirmed",
+    "deleted": "Delete",
+    "delivered": "Delivered",
+    "disapproved": "Disapproved",
+    "expired": "Expired",
+    "in_progress": "In Progress",
+    "not_delivered": "Not Delivered",
+    "opened": "Opened",
+    "ordered": "Sent",
+    "read": "Read",
+    "rejected": "Rejected",
+    "requested": "Requested",
+    "returned": "Returned",
+    "sent": "Sent",
+    "shipped": "Shipped",
+    "dispatched": "Dispatched",
+    "text": {
+      "dismissed": "Dismissed Deliveries",
+      "history": "Deliveries History",
+      "moderatable": "Pend. Approval",
+      "next": "Next Deliveries",
+      "returned": "Returned Deliveries",
+      "validatable": "Pend. Validation",
+      "validated": "Validated Deliveries"
+    },
+    "actions": {
+      "requested": "Requested",
+      "disapproved": "Disapproved",
+      "dispatched": "Dispatched",
+      "expired": "Expired",
+      "modified": "Modified",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "ordered": "Ordered",
+      "read": "Read",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "not_delivered": "Not delivered",
+      "returned": "Returned",
+      "validated": "Validated"
+    },
+    "validated": "Validated"
+  },
+  "support": {
+    "buttons": {
+      "back": "Back",
+      "retry": "Retry"
+    },
+    "response": {
+      "error": "Your inquiry could not be sent, please try again.",
+      "success": "Your inquiry has been sent successfully."
+    },
+    "subjects": {
+      "admin": {
+        "assign_icon_to_families": "Assign an existing icon to a new family.",
+        "change_delivery_status": "Delete an order that was already approved by the partner.",
+        "modify_statistics": "Changes in the Statistics tab.",
+        "other": "Other.",
+        "problems_abm_client": "Problems when registering a client.",
+        "problems_abm_partner": "Problems when registering a partner.",
+        "problems_abm_product_list": "Problems when upload or download system lists.",
+        "problems_with_client_users": "Problems with the interaction between moderator and requester of a client.",
+        "problems_with_mails": "Problems in the mail to the cient with the delivery or order details.",
+        "problems_with_products": "Problems with the display of products by the customer.",
+        "request_new_icons": "Generate design of new icons for families."
+      },
+      "client": {
+        "add_new_partner": "Add a new partner.",
+        "add_product_to_partner": "Add product(s) to an existing partner.",
+        "cant_download_files": "Problems downloading Excel and/or PDF.",
+        "cant_finish_order": "I can not complete the \"New Order\" process.",
+        "cant_see_pending_approval_orders": "\"Summary\" tab does not display pending approval orders.",
+        "change_partner_information": "Change partner's information.",
+        "delete_product_from_product_list": "Remove product(s) from product list.",
+        "how_to_change_my_password": "I want to know how to change my password.",
+        "other": "Other.",
+        "problems_on_orders_visualization": "Problems viewing orders in \"Summary\".",
+        "problems_on_products_visualization": "Problems in the visualization of the products.",
+        "zoom_not_work_on_statistics": "I can not zoom in on Statistics."
+      }
+    },
+    "thanks": "Thank you for using our system."
+  },
+  "maintenance": {
+    "message": "We are doing maintenance work on our system. <br>Please try again later. Sorry for the inconvenience.",
+    "doing_maintenance": "Sorry, the platform is in maintenance.",
+    "wait": "Wait a few minutes and try again."
+  },
+  "messages": null,
+  "sms": {
+    "delivery_ordered": {
+      "message": "You have a new order from %client_name%. Its number is %delivery_number%. %url%"
+    }
+  },
+  "configuration": {
+    "buttons": {
+      "back": "Back",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "change_password": "Change Password",
+      "retry": "Retry",
+      "save": "Save"
+    },
+    "current_password": "Current Password",
+    "email": "Email",
+    "name": "Name",
+    "password": "Password",
+    "response": {
+      "password_error": "The current password is incorrect, please try again.",
+      "password_success": "Password changed successfully."
+    },
+    "re_password": "Repeat Password",
+    "thanks": "Thank you for using our system.",
+    "title": "Change Password"
+  },
+  "home": {
+    "group": "Group",
+    "hello": "Welcome",
+    "username": "%username% to Extendeal!"
+  },
+  "login": {
+    "email": "Email",
+    "enter": "Login",
+    "error_password": "Incorrect password.",
+    "error_user": "Invalid user.",
+    "forgot_password": "Forgot your password?",
+    "password": "Password",
+    "privacy_policies": "Privacy Policies",
+    "remember_password": "Remember password",
+    "terms_and_conditions": "Terms and Conditions"
+  },
+  "moderatable_order": {
+    "accept": {
+      "error_action": "The order <strong>#%order_number% </strong> could not be approved correctly. <br> <br> Please try again.",
+      "error_text": "The order could not be approved.",
+      "go_home": "Back to home",
+      "success_text": "Was successful <span class=\"order-approved\">APPROVED</span>",
+      "success_title": "The order <span class=\"order-id\">#%order_number%</span>",
+      "no_results": "The orders inside <strong>#%order_number%</strong> have already been moderated."
+    },
+    "cancel": {
+      "buttons": {
+        "back": "Back",
+        "confirm": "Confirm cancelation",
+        "disapprove": "Disapprove"
+      },
+      "comment": "<strong class=\"modal-row__subtitle\">Add comment:</strong> <strong class=\"modal-row__info\"> Additional information of the reason is appreciated.</script>",
+      "error": "You must select a reason to continue",
+      "error_action": "The order <strong>#%order_number%</strong> could not be cancelled. <br> <br> Please try again. ",
+      "go_home": "Back to home",
+      "no_results": "This order has already been moderated",
+      "optional": "OPTIONAL - We appreciate complementary information for the reason selected",
+      "question": "Are you sure you want to reject the order?",
+      "reasons": {
+        "reason": "None",
+        "reason0": "None",
+        "reason1": "Exceeded order",
+        "reason2": "Error in Quantity requested",
+        "reason3": "Inconformity in delivery period",
+        "reason4": "Other"
+      },
+      "text": "Cancel order <span class=\"order-id\">#%order_number%</span>",
+      "title": "Cancel order",
+      "subtext": "Please select the cancellation reason:",
+      "success_action": "The order <span class=\"order-id\">#%order_number%</span> <br>&nbsp;&nbsp;&nbsp;has been <span class=\"order-cancelled\">cancelled</span> successfully. "
+    },
+    "modal": {
+      "confirm": {
+        "approve": "Approve",
+        "back": "Back",
+        "order": "Order",
+        "partner": "Partner",
+        "partners": "Partners",
+        "question": "Are you sure you want to validate the order?",
+        "thanks": "Thank you for using our system.",
+        "title": "Approve Order",
+        "total": "Total"
+      },
+      "delete": {
+        "approve": "Approve",
+        "back": "Back",
+        "comment": "<strong>Add comment:</strong> Additional information of the reason is appreciated.",
+        "delete": "Delete",
+        "order": "Order",
+        "partner": "Partner",
+        "partners": "Partners",
+        "question": "Are you sure you want to validate the order?",
+        "placeholder_text": "Write here your comment...",
+        "thanks": "Thank you for using our system.",
+        "title": "Delete Order",
+        "total": "Total",
+        "subtext": "Please select cancelation reason:"
+      }
+    },
+    "expired": {
+      "reason": "The order expired because the moderation date has passed."
+    }
+  },
+  "order_deliveries": {
+    "actions": {
+      "delete": "Delete",
+      "edit": "Edit Order",
+      "add_comment": "Add Comment"
+    },
+    "billing": {
+      "address": "Address",
+      "bill_to": "Bill to",
+      "category": "Category",
+      "contact_name": "Contact name",
+      "comments": "Comment",
+      "current_account": "Current Account",
+      "legal_address": "Legal Address",
+      "legal_name": "Legal Name",
+      "name": "Name",
+      "utid": "SSN",
+      "title": "Billing Data",
+      "payments_method": "Payments Method",
+      "payment_method": "Payment Method",
+      "payments_comments": "Payments Method comments",
+      "responsible": "Responsible Registered"
+    },
+    "buttons": {
+      "accept": "Accept",
+      "back": "Back",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "delete": "Delete",
+      "download_excel": "Download XLS",
+      "download_invoice": "Download Budget",
+      "modify": "Modify",
+      "next": "Next",
+      "reject": "Reject",
+      "validate": "Validate"
+    },
+    "delivery_points": "Delivery Points",
+    "header": {
+      "alerts": {
+        "return_reason": "Reject Reason:"
+      },
+      "boxes": {
+        "delivery_date": "Delivery Date",
+        "delivery_time": "Delivery Time",
+        "email": "Email",
+        "empty_name": "No Name",
+        "empty_email": "No Email",
+        "empty_phone": "No Phone",
+        "invoice_number": "Invoice Number",
+        "moderator": "Approver",
+        "name": "Name",
+        "orderer": "Orderer",
+        "partner": "Partner",
+        "phone": "Phone",
+        "total": "Total",
+        "tracking": "Tracking",
+        "view_detail": "View detail"
+      },
+      "detail": "Detail",
+      "invoice_number": "Invoice Number",
+      "oc": "P.O.",
+      "order_delivery": "Purchase Order",
+      "order": "Order",
+      "orders": "Orders",
+      "search": "Search...",
+      "status_title": "Status",
+      "statuses": {
+        "cancelled": "Cancelled",
+        "closed": "Closed",
+        "confirmed": "Confirmed",
+        "deleted": "Deleted",
+        "delivered": "Delivered",
+        "disapproved": "Disapproved",
+        "dispatched": "Dispatched",
+        "expired": "Expired",
+        "in_progress": "In progress",
+        "not_delivered": "Not delivered",
+        "opened": "Opened",
+        "ordered": "Ordered",
+        "read": "Read",
+        "rejected": "Rejected",
+        "requested": "Requested",
+        "returned": "Returned",
+        "sent": "Sent",
+        "shipped": "Shipped",
+        "moderatable": "Pending",
+        "validated": "Validated"
+      },
+      "tracking": "Tracking Number",
+      "without_assign": "Unassigned"
+    },
+    "modal": {
+      "confirm": {
+        "question": "Are you sure you want to confirm the changes made?",
+        "thanks": "Thank you for using our system.",
+        "title": "Confirmar Cambios"
+      },
+      "delete_order": {
+        "title": "Delete Order?",
+        "message": "The %partner_name% order will be removed from your cart"
+      },
+      "delete_partner": {
+        "message": "The partner will be removed from your order",
+        "delete": "Delete"
+      },
+      "delete_partner_and_order": {
+        "message": "Once the supplier has been deleted, your ongoing order will be discard together with all the changes made"
+      },
+      "legal_name": {
+        "title": "Legal Name"
+      },
+      "not_delivered": {
+        "question": "Are you sure you want to mark this delivery as not delivered?",
+        "title": "Delivery #%delivery_number% not delivered"
+      },
+      "return": {
+        "comment": "<strong>Add comment:</strong> We appreciate additional information to the selected reason.",
+        "error": "You must select a reason for rejection.",
+        "order": "Order",
+        "partner": "Supplier",
+        "question": "Are you sure you want to reject the order?",
+        "subtitle": "Reject Reason?",
+        "thanks": "Thank you for using our system.",
+        "title": "Reject Delivery",
+        "total": "Total"
+      },
+      "validate": {
+        "error": null,
+        "delivery_date": "Delivery Date",
+        "delivery_time": "Delivery Time",
+        "order": "Order",
+        "partner": "Partner",
+        "question": "Are you sure you want to validate the order?",
+        "select_datetime": "Select the date and time of reception",
+        "thanks": "Thank you for using our system.",
+        "title": "Valid Order",
+        "total": "Total"
+      },
+      "repeat": {
+        "question": "Do you really want to repeat your order? Remember that any order in course will be lost.\n"
+      }
+    },
+    "no_results": "No results found.",
+    "order_confirmation": "Order's Confirmation",
+    "order_detail": "Order Detail",
+    "tab": {
+      "returned": "Returned",
+      "returned_deliveries": "Returned Deliveries",
+      "validatable": "Pending Validation",
+      "validated": "Validated",
+      "validated_deliveries": "Validated Deliveries"
+    },
+    "table": {
+      "action": "Action",
+      "actions": "Actions",
+      "bulk_price": "Bulk price",
+      "bulk_price_by": "Bulk price",
+      "in_kg": "in Kg",
+      "delivery_date": "Delivery date",
+      "delivery_time": "Delivery time",
+      "delivery_number": "P.O. number",
+      "order_number": "Order number",
+      "partner": "Partner",
+      "plus_tax": " + VAT",
+      "presentation": "Unit",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "quantity_received": "Rec. quantity",
+      "quantity_received_max": "Received quantity",
+      "quantity_requested": "Req. quantity",
+      "quantity_requested_max": "Requested quantity",
+      "qty": "Qty.",
+      "subtotal": "Subtotal",
+      "tax": "VAT",
+      "total": "Total",
+      "total_final": "Final Total",
+      "total_initial": "Initial Total",
+      "unit_price": "Unit price"
+    },
+    "tooltip": {
+      "download_excel": "Download XLS",
+      "download_pdf": "Download PDF",
+      "download_invoice": "Download Budget",
+      "modify": "Modify",
+      "reject": "Reject",
+      "repeat_order": "Repeat Order",
+      "validate": "Validate",
+      "validate_date": "Select the delivery date",
+      "validate_legal_name": "Please select a legal name",
+      "validate_payment_method": "Please select a payment method",
+      "view_detail": "View detail",
+      "view_details": "View details"
+    },
+    "reasons": {
+      "reason": "None",
+      "reason0": "None",
+      "reason1": "Expired product.",
+      "reason2": "Missing product.",
+      "reason3": "Not the product that was ordered.",
+      "reason4": "Other."
+    }
+  },
+  "order_products_select": {
+    "add_comments": "Add Comment",
+    "buttons": {
+      "back": "Back",
+      "change": "Change",
+      "confirm": "Confirm",
+      "confirm_changes": "Confirm Changes",
+      "discard": "Discard",
+      "download": "Download",
+      "next": "Next",
+      "prev": "Back"
+    },
+    "charter": "Charter",
+    "checkout": {
+      "copyright": "&copy;%current_year% Extendeal. All Rights Reserved | info@extendeal.com",
+      "text1": "The request was sent.",
+      "text2": "A representative of Extendeal will contact you shortly.",
+      "text_aproval": "The order was sent, your order´s number is #%order_number%.<br /> A member of Extendeal will contact you shortly\n",
+      "thanks": "¡Thanks!",
+      "title": "The request was sent, your order number is #%order_number%"
+    },
+    "comments": "Comments",
+    "deliveries_moderated": "Moderated Deliveries",
+    "delivery_date": "Delivery Date:",
+    "delivery_dates": "Delivery Dates:",
+    "delivery_point": "Delivery Point",
+    "delivery_point_full": "Delivery Point",
+    "empty_cart": "Your cart is empty.<br> Add products to continue with <br> your order.",
+    "change_delivery_point": "Change Delivery Point",
+    "delivery_information": "Delivery Information",
+    "last_orders": "Last orders",
+    "min_amount": "Min. Amount ",
+    "min_amount_order": "Min. Amount",
+    "missing": "Missing",
+    "order": "Your Order",
+    "order_cart": "Cart",
+    "order_confirmation": {
+      "brand": "Brand",
+      "title": "Order's Confirmation",
+      "plus_tax": "+ VAT",
+      "product": "Product",
+      "products_before": "Previous Products",
+      "products_selected": "Selected Products",
+      "quantity": "Quantity",
+      "total": "Total"
+    },
+    "products_families": "Products families",
+    "products_list": {
+      "brand": "Brand",
+      "currency": "Unit price",
+      "loading": "Loading",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "subtotal": "Subtotal",
+      "total": "Total",
+      "unit_sale": "Unit",
+      "bulk_price": "Bulk Price"
+    },
+    "search": {
+      "holder": "Search products from "
+    },
+    "steps": {
+      "step1": "Products Selection",
+      "step2": "Delivery Info",
+      "step3": "Validate",
+      "step4": "Last Step",
+      "min": {
+        "step1": "Selection",
+        "step2": "Delivery Info"
+      }
+    },
+    "subt": "Subt.",
+    "subtotal": "Subtotal",
+    "time_range": "Time Range",
+    "total": "Total"
+  },
+  "order_completed": {
+    "order_placed_partner": "Your order #%order_number% has been placed!",
+    "order_placed_buyer": "Your order #%order_number% has been sent!",
+    "order_sent": "Your order has been placed. It has been sent to the corresponding suppliers.",
+    "order_requested": "Your order has been requested. It has been sent to the corresponding moderators.",
+    "order_ready": "You can now make a new order.",
+    "new_order": "New order",
+    "accept": "Accept"
+  },
+  "partner_moderatable_order": {
+    "confirm": {
+      "order_confirmed": "Has been <span class=\"order-confirmed\">confirmed</span> successfully",
+      "text": "The order <span class=\"order-id\">#%delivery_number%</span>",
+      "text2": "for client <span class=\"order-for\">%client_name%</span>",
+      "thanks": "¡Thank you!"
+    },
+    "not_moderatable": "This order has been moderated.",
+    "reject": {
+      "buttons": {
+        "confirm": "Confirm rejection",
+        "go_home": "Back to home"
+      },
+      "error": "You must select a reason to continue",
+      "error_action": "The order <strong>#%delivery_number%</strong> could not be <br>rejected successfully.<br><br> Please try again.",
+      "optional": "OPTIONAL - We appreciate complementary information for the reason selected.",
+      "order_cancelled": "Has been <span class=\"order-rejected\">rejected</span>",
+      "reasons": {
+        "reason": "None",
+        "reason0": "None",
+        "reason1": "Stock lack.",
+        "reason2": "Delivery date.",
+        "reason3": "Administrative issues (contact the Partner).",
+        "reason4": "Other."
+      },
+      "subtext": "Please select the reason of the rejection:",
+      "success_action": "The Order <span class=\"order-id\">#%delivery_number%</span> <br>&nbsp;&nbsp;&nbsp;has been <span class=\"order-rejected\">rejected</span> successfully.",
+      "text": "Reject delivery for order <strong>#%delivery_number%</strong>",
+      "thanks": "Thank you!"
+    },
+    "success": {
+      "title": "Order #%delivery_number% has been confirmed!",
+      "text": "You have confirmed the order, it was sent to the corresponding client.",
+      "confirm": {
+        "title": "¡A Ordem de Compra #%delivery_number% foi confirmada!",
+        "text": "A Ordem de Compra foi confirmada e enviada ao cliente correspondente."
+      },
+      "reject": {
+        "title": "A Ordem de Compra #%delivery_number% foi rejeitada!",
+        "text": "A Ordem de Compra foi confirmada e enviada ao cliente correspondente."
+      }
+    }
+  },
+  "recover": {
+    "back": "Back",
+    "body": "You will receive a confirmation email in the next few minutes with the instructions so that you can choose your new password.",
+    "cancel": "Cancel",
+    "change_password": "Change password",
+    "email_not_exists": "The email address does not exist",
+    "error": "Error!",
+    "go_home": "Back to home",
+    "mandatory_field": "This field is required.",
+    "new_link": "Request a new link",
+    "new_password": "New password",
+    "non_existence_email": "The address you entered does not exist.",
+    "password_change": "Your password was successfully changed.",
+    "password_error": "There was an error changing your password.",
+    "passwords_not_match": "Passwords do not match.",
+    "please": "Please",
+    "re_password": "Repeat password",
+    "send": "Send",
+    "success": "Password changed successfully",
+    "title": "Check your email",
+    "unregistered_email": "The address entered is not registered",
+    "password_length_validate": "Must be at least 6 characters",
+    "password_incorrect": "Incorrect password.",
+    "changing_password": "Changing password"
+  },
+  "statistics": {
+    "add_filter": "Add filter",
+    "all_delivery_points": "All Delivery Points",
+    "all_families": "All families",
+    "all_partners": "All Partners",
+    "all_products": "All Products",
+    "average_price": "Price avarage",
+    "avg_price": "P. Avg.",
+    "apply": "Apply Filter",
+    "bar": "Bar",
+    "bars": "Bars",
+    "day": "Day",
+    "delete": "Delete",
+    "delete_filter": "Delete filter",
+    "delivery_period": "Delivery period",
+    "delivery_point": "Delivery point",
+    "delivery_points": "Delivery Points",
+    "download_graphic": "Download graphic",
+    "download_excel": "Download XLS",
+    "filters_params": "Filter parameters",
+    "line": "Line",
+    "lines": "Lines",
+    "maximum_price": "Maximum price",
+    "max_price": "Max. P.",
+    "minimum_price": "Minimum price",
+    "min_price": "Min. P.",
+    "month": "Month",
+    "months": "Months",
+    "new_filter": "New filter",
+    "not_apply": "Does not apply",
+    "notification": "Notification",
+    "partners": "Partners",
+    "period": "Period",
+    "products": "Products",
+    "product_family": "Product family",
+    "products_families": "Products families",
+    "total": "Total",
+    "total_units": "Total unities",
+    "total_u": "Tot. u. ",
+    "unit": "Unit",
+    "units": "Unities",
+    "week": "Week",
+    "no_data": "No results",
+    "dashboard": {
+      "small_print": "(*) The number of times that it repeats in the represented period of time.",
+      "current_month": "Current month",
+      "last_30_days": "Last 30 days",
+      "custom": "Custom",
+      "orders": "P.O.",
+      "money": "Money",
+      "most_order_days": "Total amount of P.O. per day",
+      "percentage": "Percentage",
+      "total": "Total",
+      "see_more": "More",
+      "day_of_week": "Day of the week",
+      "legend": "Legend",
+      "updated_at": "Updated at",
+      "most_requested_families": "Most requested product families",
+      "most_frequent_suppliers": "Most requested suppliers",
+      "product_family": "Products family",
+      "percen": "Percen.",
+      "prod_fam": "Prod. Family",
+      "partner": "Partner",
+      "monday": "Monday ",
+      "tuesday": "Tuesday ",
+      "wednesday": "Wednesday ",
+      "thursday": "Thursday ",
+      "friday": "Friday ",
+      "saturday": "Saturday ",
+      "sunday": "Sunday ",
+      "statistics": "Statistics",
+      "to": "to",
+      "others": "Others",
+      "families": "Product Families",
+      "deliveries": "Purchase Orders",
+      "partners": "Partners",
+      "families_description": "Number of families requested within the selected time range.",
+      "deliveries_description": "Total number of Purchase Orders made within the selected time range.",
+      "partners_description": "Number of partners to whom Purchase Orders were requested within the selected time range.",
+      "money_description": "Total amount of money invested within the selected time range.",
+      "accept": "Accept",
+      "cancel": "Cancel",
+      "top_bar_msg": "Please select a date range",
+      "date_format": "MM/DD/YYYY",
+      "language": "en",
+      "abbreviations": {
+        "monday": "M",
+        "tuesday": "T",
+        "wednesday": "W",
+        "thursday": "T",
+        "friday": "F",
+        "saturday": "S",
+        "sunday": "S"
+      },
+      "value": "value",
+      "delivery_point_filter": "delivery point",
+      "all": "all",
+      "all_clients": "All clients"
+    },
+    "tailormade": {
+      "download_xls": "Download XLS",
+      "download_csv": "Download csv",
+      "download_png": "Download PNG",
+      "values_in": "Vaues in:",
+      "type_of_graphic": "Type of graphic:",
+      "group_by": "Group by:",
+      "graphic_options": "Graphic options",
+      "minimal_price": "Minimal price",
+      "maximun_price": "Maximun price",
+      "average_price": "Average price",
+      "total": "Total",
+      "total_units": "Total units",
+      "all": "All",
+      "apply": "Apply",
+      "delivery_points": "Delivery points",
+      "product_families": "Product families",
+      "partners": "Partners",
+      "products": "Products",
+      "chart_date_format": "%m/%d",
+      "chart_date_format_year": "%m/%d/%y",
+      "delete": "Delete",
+      "restore": "Restore",
+      "lineal": "Lineal",
+      "bars": "Bars",
+      "money": "Money",
+      "units": "Units",
+      "days": "Days",
+      "weeks": "Weeks",
+      "months": "Months"
+    }
+  },
+  "validation": {
+    "buttons": {
+      "accept": "Accept",
+      "back": "Back",
+      "download_excel": "Download XLS",
+      "download_invoice": "Download Invoice",
+      "modify": "Modify",
+      "not_delivered": "Not Delivered",
+      "reject": "Reject",
+      "restore": "Restore",
+      "validate": "Validate"
+    },
+    "delivery_points": "Delivery Points",
+    "header": {
+      "alerts": {
+        "return_reason": "Rejection reason:"
+      },
+      "boxes": {
+        "delivery_date": "Delivery Date",
+        "delivery_time": "Delivery Time",
+        "email": "Email",
+        "empty_name": "No name",
+        "empty_email": "No Email",
+        "empty_phone": "No Phone",
+        "invoice_number": "Invoice Number",
+        "moderator": "Moderator",
+        "name": "Name",
+        "orderer": "Orderer",
+        "partner": "Partner",
+        "phone": "Phone",
+        "tracking": "Tracking",
+        "total": "Total"
+      },
+      "invoice_number": "Invoice Number",
+      "order": "Order",
+      "orders": "Orders",
+      "search": "Search by P.O. number, supplier or status...",
+      "statuses": {
+        "cancelled": "Cancelled",
+        "closed": "Closed",
+        "confirmed": "Confirmed",
+        "deleted": "Deleted",
+        "delivered": "Delivered",
+        "disapproved": "Disapproved",
+        "dispatched": "Dispatched",
+        "expired": "Expired",
+        "in_progress": "In progress",
+        "not_delivered": "Not delivered",
+        "opened": "Opened",
+        "ordered": "Ordered",
+        "read": "Read",
+        "rejected": "Rejected",
+        "requested": "Requested",
+        "returned": "Returned",
+        "sent": "Sent",
+        "shipped": "Shipped",
+        "moderatable": "Pending",
+        "validated": "Validated"
+      },
+      "tracking": "Tracking",
+      "without_assign": "Unassigned"
+    },
+    "modal": {
+      "confirm": {
+        "question": "Do you want to confirm the changes made?",
+        "thanks": "Thank you.",
+        "title": "Confirm changes"
+      },
+      "return": {
+        "comment": "<strong class=\"modal-row__subtitle\"> Add comment: </strong> <strong class=\"modal-row__info\"> We appreciate complementary information to the selected reason.</strong>",
+        "error": "You must select a reason for the rejection.",
+        "order": "Order",
+        "partner": "Partner",
+        "partners": "Partners",
+        "question": "Are you sure you want to reject the order?",
+        "subtitle": "Rejection purpose?",
+        "thanks": "Thank you.",
+        "title": "Reject Order",
+        "total": "Total"
+      },
+      "validate": {
+        "error": null,
+        "delivery_date": "Delivery date",
+        "delivery_time": "Delivery hour",
+        "invoice_number": "Enter your invoice's number",
+        "order": "Order",
+        "partner": "Partner",
+        "question": "Are you sure you want to validate the order?",
+        "select_datetime": "Select the date and time of reception",
+        "submit_invoice_number": "Invoice Number",
+        "thanks": "Thank you.",
+        "title": "Validate order",
+        "total": "Total"
+      }
+    },
+    "no_results": "No results found.",
+    "tab": {
+      "returned": "Rejected",
+      "returned_deliveries": "Rejected deliveries",
+      "validatable": "Pending validation",
+      "validated": "Validated",
+      "validated_deliveries": "Validated P.O.",
+      "min": {
+        "validatable": "Pending",
+        "validated": "Validated"
+      }
+    },
+    "table": {
+      "action": "Action",
+      "actions": "Actions",
+      "delivery_date": "Delivery date",
+      "delivery_number": "P.O. Number",
+      "partner": "Partner",
+      "plus_tax": " + VAT",
+      "presentation": "Unit",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "qty": "Qty.",
+      "subtotal": "Subtotal",
+      "tax": "VAT",
+      "total": "Total",
+      "total_final": "Final Total",
+      "total_initial": "Initial Total",
+      "unit_price": "Unit price",
+      "unit_sale": "Unit Sale",
+      "base_price": "Product Price",
+      "download_xls": "Download XLS",
+      "download_pdf": "Download PDF",
+      "delivery_time": "Delivery Time",
+      "order_delivery": "Purchase Order",
+      "not_delivered": "Mark as not delivered",
+      "view_detail": "View detail"
+    },
+    "tooltip": {
+      "download_excel": "Download XLS",
+      "download_pdf": "Download PDF",
+      "download_invoice": "Download budget",
+      "modify": "Modify",
+      "reject": "Reject",
+      "return": "Return",
+      "repeat": "Repeat Order",
+      "validate": "Validate",
+      "view_detail": "See detail",
+      "view_details": "See details"
+    },
+    "reasons": {
+      "reason": "None",
+      "reason0": "None",
+      "reason1": "Expired product",
+      "reason2": "Not the product that was ordered",
+      "reason3": "Missing product",
+      "reason4": "Other"
+    },
+    "empty_pages": {
+      "pending_fresh": {
+        "title": "You do not have any orders to validate!",
+        "message": "Here you will see all the Purchase Orders which has not been validated yet."
+      },
+      "pending": {
+        "title": "Keep it up!",
+        "message": "You have validated all the Purchase Orders."
+      },
+      "validated_fresh": {
+        "title": "You have not validated yet!",
+        "message": "Here you will see all the Purchase Orders which were validated."
+      },
+      "search": {
+        "title": "No results found!",
+        "message": ""
+      }
+    }
+  },
+  "client": {
+    "address": "Address",
+    "code": "Code",
+    "email": "Email",
+    "name": "Nombre",
+    "legal_name": "Legal Name",
+    "utid": "SSN"
+  },
+  "delivery_point": {
+    "address": "Address",
+    "client": "Client",
+    "contact_name": "Contact name",
+    "contact_phone": "Contact phone",
+    "locality": "Zone",
+    "range_from": "From",
+    "range_to": "to",
+    "zip_code": "Zip code"
+  },
+  "partner": {
+    "partner_type": {
+      "partner": "Partner",
+      "external": "External"
+    }
+  },
+  "order": {
+    "client": "Client",
+    "dirty_notification": "Some prices were changed recently, please confirm changes to continue",
+    "number": "Number",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "supplier_names": "%names% and %more% more."
+  },
+  "order_item": {
+    "actions": "Actions",
+    "brand": "Brand",
+    "date": "Date",
+    "delivered_quantity": "Delivered quantity",
+    "delivered_unit_price": "Delivered unit price",
+    "family": "Familiy",
+    "time": "Delivery Time",
+    "name": "Name",
+    "ordered_quantity": "Ordered quantity",
+    "ordered_unit_price": "Orderd unit price",
+    "partner": "Partner",
+    "presentation": "presentation",
+    "price": "Price",
+    "product_family": "Product family",
+    "product_subfamily": "Product subfamily",
+    "quantity": "Quantity",
+    "requested_quantity": "Requested quantity",
+    "requested_unit_price": "Requested unit price",
+    "sale_unit": "Sale unit",
+    "shipped_quantity": "Shipped quantity",
+    "shipped_unit_price": "Shipped unit price",
+    "total_price": "Total price",
+    "unit": "Unit",
+    "unit_price": "Unit price"
+  },
+  "order_delivery": {
+    "cancel_reason": "Cancel reason",
+    "cancel_comment": "Cancellation comment",
+    "cancelled": "Cancelled",
+    "client": "Client",
+    "date": "Date",
+    "delivery_date": "Delivery date",
+    "delivery_number": "Delivery number",
+    "delivery_point": "Delivery point",
+    "delivery_range": "Delivery range",
+    "invoice": "Invoice",
+    "item": "Product",
+    "items": "Products",
+    "moderated": "Moderated",
+    "moderator": "Moderator",
+    "month": "Month",
+    "number": "Number",
+    "order": "Order",
+    "ordered": "Ordered",
+    "orderer": "Orderer",
+    "order_creation_date": "Order Creation Date",
+    "order_moderated": "The order has been moderated",
+    "partner": "Partner",
+    "purchase_date": "Purchase date",
+    "reject_reason": "Rejection reason",
+    "reject_comment": "Rejection comment",
+    "rejected": "Rejected",
+    "requested": "Requested",
+    "return_reason": "Return reason",
+    "return_comment": "Return comment",
+    "returned": "Returned",
+    "status": "Status",
+    "subtotal": "Subtotal",
+    "thanks": "Thank you!",
+    "total": "Total",
+    "tracking": "Tracking",
+    "tracking_number": "Tracking number",
+    "week": "Week"
+  },
+  "product": {
+    "sales_unit": "Sales Unit"
+  },
+  "administration_mailer": null,
+  "buyer_mailer": {
+    "delivery_cancelled": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "message": "Your Order <strong>#%delivery_number%</strong> has been <strong> cancelled.</strong>",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "Order #%delivery_number% Cancelled",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    },
+    "delivery_confirmed": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "datetime": "Date and time",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "email": "Email",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "sirs": "Mr",
+      "subject": "Confirmed delivery - Order #%delivery_number% - (%partner_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total",
+      "utid": "SSN"
+    },
+    "delivery_modified": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "datetime": "Date and time",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "email": "Email",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "sirs": "Mr",
+      "subject": "Modified delivery - Order #%delivery_number% - (%partner_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total",
+      "utid": "SSN"
+    },
+    "delivery_ordered": {
+      "address": "Address",
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "message": "Mr. client, your order <strong>#%delivery_number%</strong> has been <span style=\"font-weight: bold;\">approved.</span><br/> The final purchase order has been attached.\n",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "Order confirmation #%delivery_number%",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    },
+    "delivery_rejected": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "message": "The Partner %partner_name% <strong>cancelled</strong> the delivery order <strong>#%delivery_number%</strong>",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "Cancelled order - Order #%delivery_number% - (%partner_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    },
+    "order_requested": {
+      "address": "Address",
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "email": "Email",
+      "greeting": "Sincerely. Extendeal administration",
+      "message": "Mr. client, your order <strong>#%order_number%</strong> has been done and is waiting for the approval.<br/> Is attached, The final purchase order has been attached.\n",
+      "orderer": "Orderer",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "Order confirmation #%order_number%",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    }
+  },
+  "customer_support_mailer": {
+    "missing_billing_data": {
+      "subject": "[AR] Problemas com informação do cliente.",
+      "message": "<p>É necessário completar a informação dados de faturamento de(dos) cliente/s <strong>(%clients_names%)</strong> corretamente para poder realizar uma compra e poder utilizar a plataforma em sua totalidade.</p>\n"
+    }
+  },
+  "deliveries_mailer": {
+    "delivery_cancelled": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "message": "The Order <strong>#%delivery_number%</strong> for <strong>%client_name%</strong> requested by <strong>%orderer_name%</strong>, has been <strong style=\"color: #F00;\"> cancellated </strong> by the Moderator.",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "Order #%delivery_number% Cancelled",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    },
+    "delivery_confirmed": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "datetime": "Date and time",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "email": "Email",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "sirs": "Mr.",
+      "subject": "Confirmed delivery - Order #%delivery_number% - (%partner_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total",
+      "utid": "SSN"
+    },
+    "delivery_modified": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "datetime": "Date and time",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "email": "Email",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "sirs": "Mr",
+      "subject": "Modified delivery - Order #%delivery_number% - (%partner_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total",
+      "utid": "SSN"
+    },
+    "delivery_ordered": {
+      "subject": "New Order #%delivery_number% - Tracing - (%client_name%)"
+    },
+    "delivery_rejected": {
+      "address": "Address",
+      "cancel_reason": "Reason for cancellation",
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "message": "The Partner %partner_name% <strong>cancelled</strong> the delivery order <strong>#%delivery_number%</strong>",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "Cancelled delivery - Order #%delivery_number% - (%partner_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    },
+    "order_requested": {
+      "address": "Address",
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "email": "Email",
+      "greeting": "Sincerely. Extendeal administration",
+      "message": "<p>The following products were requested to the partners:</p>\n",
+      "orderer": "Orderer",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "New Order #%order_number% - Tracing - (%client_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    }
+  },
+  "moderator_mailer": {
+    "order_requested": {
+      "address": "Address",
+      "buttons": {
+        "approve": "Approve",
+        "cancel": "Disapprove",
+        "modify": "Modify"
+      },
+      "client": "Client",
+      "contact": "Contact",
+      "delivery_date": "Delivery date",
+      "delivery_point": "Delivery point",
+      "greeting": "Sincerely. Extendeal administration",
+      "message": "<p>Mr. client, the user <strong>%orderer_name%</strong> has requested the approval for de purchase order <strong>#%order_number%.</strong><br/> Please indicate the action.</p>\n",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "subject": "Pending approval - Tracing - New order #%order_number% - (%client_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total"
+    }
+  },
+  "user_mailer": {
+    "reset_password_email": {
+      "body": "If you have not requested a password reset ignore this message.",
+      "signature": "Sincerely. <br> Administration Extendeal\n",
+      "subject": "Password recovery",
+      "title": "For restoring your password, click the button:"
+    },
+    "welcome_email": {
+      "welcome_to_extendeal": "¡Bienvenido a Extendeal!",
+      "body_part_1": "Para ingresar al sistema, acceda haciendo click en la Endereço %site_url% con su Endereço de e-mail %email% y la siguiente contraseña:",
+      "body_part_2": "Una vez ingresado al sistema, usted podrá modificar la contraseña asignada desde la configuración.",
+      "body_part_3": "Cualquier consulta y/o modificación necesaria debe comunicarse con %email%",
+      "regards": "Atte.",
+      "legal_terms": "Términos y condiciones",
+      "prImpostocy_policy": "Política de prImpostocidad",
+      "body": "Sr. cliente, fue dado de alta en el sistema de pedidos de Extendeal. Para ingresar, acceda a través de la dirección %site_url% con su dirección de e-mail %email% y la siguiente contraseña: <br> <br> <strong>%password%</strong> <br> <br> Una vez ingresado al sistema, usted puede modificar la contraseña asignada.\n",
+      "signature": "Sincerely. <br> Administration Extendeal\n",
+      "subject": "Alta de Usuario"
+    }
+  },
+  "sales_mailer": null,
+  "partner_mailer": {
+    "delivery_ordered": {
+      "address": "Address",
+      "buttons": {
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "modify": "Modify",
+        "reject": "Reject",
+        "moderate": "Moderate O.C"
+      },
+      "contact": "Contact",
+      "date_and_time": "Date and time",
+      "delivery_date": "Delivery date",
+      "email": "Email",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "sirs": "Mr.",
+      "subject": "New order #%delivery_number% - (%client_name%)",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total",
+      "utid": "SSN",
+      "order_received": "Order received!",
+      "access_platform": "Access platform for moderating Order."
+    },
+    "delivery_returned": {
+      "address": "Address",
+      "buttons": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      },
+      "cancel_reason": "Rejected reason",
+      "comment": "Comment",
+      "contact": "Contact",
+      "date_and_time": "Date and Time",
+      "delivery_date": "Delivery Date",
+      "delivery_date_estimated": "Delivery Date estimated",
+      "delivery_requested_date": "Delivery Requested Date",
+      "delivery_returned": "Delivery Returned",
+      "email": "Email",
+      "family": "Family",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Price",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "sirs": "Mr(s)",
+      "status": "State",
+      "subject": "Order #%delivery_number% Rejected - %client_name%",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total",
+      "tracking": "Traking",
+      "utid": "SSN",
+      "without_assign": "Without Assign"
+    },
+    "delivery_validated": {
+      "address": "Address",
+      "buttons": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      },
+      "contact": "Contact",
+      "date_and_time": "Date and Time",
+      "delivery_date": "Delivery Date",
+      "delivery_datetime": "Delivery Date and Time",
+      "delivery_validated": "Delivery Validated",
+      "email": "Email",
+      "family": "Family",
+      "phone": "Phone",
+      "plus_tax": " + VAT",
+      "price": "Precio",
+      "product": "Product",
+      "quantity": "Quantity",
+      "remark": "Comment",
+      "requested_datetime": "Requested Date and Time",
+      "sirs": "Mr(s)",
+      "status": "State",
+      "subject": "Order #%delivery_number% Validated - %client_name%",
+      "subtotal": "Subtotal",
+      "to": "to",
+      "total": "Total",
+      "tracking": "Tracking",
+      "utid": "SSN",
+      "without_assign": "Without assign"
+    }
+  },
+  "decimal_point": ".",
+  "thousand_separator": ",",
+  "plus_tax": "+ VAT",
+  "modals": {
+    "alert_modal": {
+      "go_home": "Back to home",
+      "title": {
+        "delivery_confirm": "Confirm P.O.",
+        "delivery_moderation": "Moderate P.O.",
+        "delivery_reject": "Reject P.O.",
+        "order_disapprove": "Disapprove Order",
+        "order_approve": "Approve Order",
+        "order_moderated": "Moderate Order"
+      },
+      "content": {
+        "delivery_confirm": "The purchase order #%delivery_number% has already been confirmed.",
+        "delivery_moderation": "The purchase order #%delivery_number% has already been moderated.",
+        "delivery_reject": "The purchase order #%delivery_number% has already been rejected.",
+        "order_disapprove": "The order #%number% has been disapproved successfully.",
+        "order_approve": "The order #%order_number% has already been approved.",
+        "order_moderated": "Ther order #%order_number% has already been moderated.",
+        "order_expired": "The order #%order_number% could not be approved as all its P.O. have already expired."
+      }
+    },
+    "missing_billing_data": {
+      "title": "Missing information",
+      "body": "Your billing data is not loaded correctly, for this reason you can not make any purchase. An email was sent to operations to solve the problem."
+    },
+    "session_expired": {
+      "title": "Session expired",
+      "body": "There has been no activity for 10 minutes or more. Please login again."
+    },
+    "approve_order": {
+      "fail": "<p>We are sorry, An error has happened while approving the order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "title": "Approve order",
+      "success": "The order #%number% has been approved successfully.",
+      "success_partially": "Your order #%number% was partially approved successfully.",
+      "order": "Order",
+      "total": "Total",
+      "partners": "Partners"
+    },
+    "mobile_comment": {
+      "title": "Comment",
+      "add_comment": "Add Comment"
+    },
+    "mobile_legal_name": {
+      "title": "Legal name"
+    },
+    "not_delivered": {
+      "title": "P.O. not delivered",
+      "body": "The P.O. #%number% will be moderated as Not delivered.",
+      "success": "The P.O. #%number% was moderated successfully.",
+      "fail": "<p>We are sorry, An error has happened while moderating the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>"
+    },
+    "repeat_delivery": {
+      "body": "<p>The purchase order #%number% will be repeated.</p><p>Remember that if you have an order in progress, it will be discarted.</p>",
+      "fail": "<p>We are sorry, An error has happened while repeating the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "title": "Repeat Purchase Order"
+    },
+    "confirm_delivery": {
+      "client": "Client",
+      "fail": "<p>We are sorry, An error has happened while confirming the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "order_delivery": "Purchase Order",
+      "title": "Confirm Purchase Order",
+      "total": "Total"
+    },
+    "disapprove_order": {
+      "add_comment": "Add a comment",
+      "error": "You must select a reason to continue",
+      "fail": "<p>We are sorry, An error has happened while disapproving the order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "order": "Order",
+      "partners": "Partners",
+      "reason": "Reason:",
+      "reason_1": "Exceeded order",
+      "reason_2": "Error in Quantity requested",
+      "reason_3": "Inconformity in delivery period",
+      "reason_4": "Other",
+      "success": "The order #%number% has been disapproved successfully.",
+      "success_partially": "The order #%number% has been partially disapproved successfully.",
+      "title": "Disapprove order",
+      "total": "Total"
+    },
+    "delete_delivery": {
+      "add_comment": "Add a comment",
+      "error": "You must select a reason to continue",
+      "fail": "<p>We are sorry, An error has happened while deleting the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "order": "Purchase Order",
+      "partner": "Partner",
+      "reason": "Reason:",
+      "reason_1": "Exceeded order",
+      "reason_2": "Error in Quantity requested",
+      "reason_3": "Inconformity in delivery period",
+      "reason_4": "Other",
+      "success": "Your purchase order #%number% was deleted successfully.",
+      "title": "Delete Purchase Order",
+      "total": "Total"
+    },
+    "customer_support": {
+      "attach": "Attach file",
+      "description": "If it is a mistake, please describe:<br>Steps to reproduce it, result obtained, expected result and, if possible, attache a screenshot to the error/problem. If it is an operation's question, please explain in detail what you need to know.",
+      "fail": "<p>Your inquiry could not be sent.</p><p>Please try again or send an email to <a href='mailto:%support%'>%support%</a></p>",
+      "intro": "Type your request in the following space. You will be receiving a reply shortly.",
+      "message": "Type your message here...",
+      "message_error": "Please give a brief description",
+      "select_subject": "Select the subject...",
+      "subject": "Subject",
+      "subject_error": "Please select a subject",
+      "success": "Your inquiry has been sent successfully.",
+      "title": "Customer Service",
+      "message_label": "Message"
+    },
+    "return_delivery": {
+      "add_comment": "Add comment",
+      "error": "You must select a reason to continue",
+      "fail": "<p>We are sorry, an error has happened while returning the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "order_delivery": "Purchase order",
+      "partner": "Supplier",
+      "reason": "Reason:",
+      "reason_1": "Products in bad conditions.",
+      "reason_2": "Not the product that was ordered.",
+      "reason_3": "Missing product.",
+      "reason_4": "Other.",
+      "success": "Your P.O. #%number% was returned successfully.",
+      "title": "Return purchase order",
+      "total": "Total"
+    },
+    "reject_delivery": {
+      "add_comment": "Add comment",
+      "error": "You must select a reason to continue",
+      "order_delivery": "Purchase order",
+      "client": "Client",
+      "fail": "<p>We are sorry, An error has happened while rejecting the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "reason": "Reason:",
+      "reason_1": "Stock lack.",
+      "reason_2": "Delivery date.",
+      "reason_3": "Administrative issues (contact the Partner).",
+      "reason_4": "Other.",
+      "success": "Your purchase order #%number% was rejected successfully.",
+      "title": "Reject purchase order",
+      "total": "Total"
+    },
+    "discard_order": {
+      "title": "Discard order",
+      "message": "Your current order will be discarded, all changes made to the cart will be lost."
+    },
+    "validate_delivery": {
+      "fail": "<p>We are sorry, An error has happened while validating the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "order_delivery": "Purchase Order",
+      "partner": "Partner",
+      "invoice_number": "Invoice number",
+      "select_receive_time": "Select the date and time of reception:",
+      "success": "Your P.O. #%number% was validated succesfully.",
+      "title": "Validate Purchase Order",
+      "total": "Total"
+    },
+    "legal_terms":{
+      "title": "Privacy and Conditions",
+      "accepting": "Accepting"
+    },
+    "delete_item_set": {
+      "title": "Delete",
+      "message": "The supplier will be deleted from your order.",
+      "message_with_order": "Once the supplier has been deleted, your ongoing order will be discard together with all the changes made.",
+      "fail": "<p>We are sorry, An error has happened while deleting the purchase order.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "success": "The supplier was deleted successfully."
+    },
+    "ordering_error": {
+      "attention": "Attention",
+      "blocking_message": "The deliveries will be deleted and the products they include will not be ordered from the supplier",
+      "delete_deliveries": "Delete deliveries",
+      "request_message": "The order #%number% was partially sent. If you continue some moderators may not be notified.",
+      "unblocking_message": "The deliveries were partially sent. If you continue some users may not be notified.",
+      "purchase_order": "Purchase Order:",
+      "partner_name": "To the Partner:"
+    },
+    "add_product_error": {
+      "add_product": "Add Product",
+      "add_error_message": "Sorry, an error occurred while adding the product to the Cart. Please try again."
+    },
+    "tracking_number": "Tracking number"
+  },
+  "loading": {
+    "approving_order": "Approving Order...",
+    "cart": "Loading your order...",
+    "charts": "Loading charts...",
+    "confirming_delivery": "Confirming Purchase Order...",
+    "deliveries": "Loading P.O. ...",
+    "default": "Loading...",
+    "deleting_delivery": "Deleting Purchase Order...",
+    "delivery_points": "Loading delivery points...",
+    "disapproving_order": "Disapproving Order...",
+    "discarding_order": "Discarding Order...",
+    "information": "Loading information...",
+    "moderating_order": "Moderating Order...",
+    "new_order": "Loading New order...",
+    "requesting_order": "Placing Order...",
+    "orders": "Loading orders...",
+    "products": "Loading products...",
+    "repeating_delivery": "Repeating Purchase Order...",
+    "step_2": "Loading Step 2...",
+    "step_3": "Loading Step 3...",
+    "step_4": "Placing order...",
+    "sending_inquiry": "Sending inquiry...",
+    "statistics": "Loading Statistics...",
+    "summary": "Loading Summary...",
+    "validation": "Loading Validation...",
+    "validating_delivery": "Validating Purchase Order...",
+    "rejecting_delivery": "Rejecting Purchase Order...",
+    "returning_delivery": "Returning Purchase Order...",
+    "deleting_item_set": "Deleting...",
+    "discarding": "Discarding...",
+    "selecting_delivery_point": "Selecting Delivery Point...",
+    "delivery_detail": "Loading detail..."
+  },
+  "delivery_point_sidebar": {
+    "all": "All delivery points"
+  },
+  "ordering": {
+    "generating_pdf": "Generation of PDF",
+    "moderator_mail": "Sending mail to moderator %name% (%email%)",
+    "supplier_mail": "Sending mail to supplier %name% (%email%)",
+    "supplier_sms": "Sending SMS to supplier %name% (%number%)",
+    "buyer_mail": "Sending mail to buyer %name% (%email%)",
+    "tracking_mail": "Sending tracking mail",
+    "if_errors_continue": "If the errors continue, please communicate with <button data-action='open-customer-support-modal' data-reason='3' class='order-result__message--link'>Customer support</button>",
+    "to_report_errors": "To report the errors please communicate with <button data-action='open-customer-support-modal' data-reason='%reason%' class='order-result__message--link'>Customer support</button>",
+    "request": {
+      "error": "Error sending the order",
+      "progress": "Sending the order to the moderators",
+      "success": "Order #%number% was sent successfully to the moderators.",
+      "feedback": {
+        "success": {
+          "heading": "Your order #%number% is pending approval!",
+          "subtitle": "The order <strong>will expire</strong> if is not approved before <strong>%date%</strong> at <strong>11:59 PM</strong>.",
+          "subtitle_today": "The order <strong>will expire today</strong> if is not approved before <strong>11:59 PM</strong>.",
+          "message": "Responsible moderators are: %moderators%.",
+          "message_singular": "Responsible moderator is: %moderators%."
+        },
+        "fail": {
+          "heading": "Your order #%number% could not be sent!",
+          "message": "It was not posible to notify the corresponding moderators, you can redo your order, discard it or generate a new one."
+        }
+      }
+    },
+    "checkout": {
+      "waiting": "Waiting to send delivery to the supplier %supplier%",
+      "progress": "Sending delivery to the supplier %supplier%...",
+      "success": "Delivery #%number% was sent successfully.",
+      "error": "Error sending delivery to the supplier %supplier%",
+      "feedback": {
+        "success": {
+          "heading": "Your order #%number% has been placed!",
+          "message": "Your order has been placed. It has been <strong>sent to the corresponding suppliers</strong>, waiting for <strong>confirmation</strong>."
+        },
+        "fail": {
+          "heading": "Your order #%number% could not be placed!",
+          "message": "It was not posible to notify the corresponding suppliers, you can redo your order, discard it or generate a new one."
+        }
+      }
+    },
+    "approve": {
+      "feedback": {
+        "success": {
+          "heading": "The order #%number% has been approved!",
+          "message": "You have approved your order, it was sent to the corresponding buyers."
+        },
+        "fail": {
+          "heading": "The order #%number% could not be approved!",
+          "message": "It was not posible to notify the corresponding suppliers, you can redo your order, discard it or generate a new one."
+        }
+      }
+    }
+  },
+  "delivery_details": {
+    "orderer_information": "Orderer's Information",
+    "moderator_information": "Moderator's Information",
+    "partner_information": "Partner's Information",
+    "manager_information": "Manager's Information",
+    "activity": "Activity",
+    "oc_activity": "P.O. Activity",
+    "oc_detail": "P.O. Detail",
+    "supplier": "Supplier",
+    "delete_product": "Delete Product",
+    "enable_product": "Enable Product",
+    "comment": "Comment",
+    "details": "Detail"
+  },
+  "words": {
+    "and": "and",
+    "day": "day",
+    "days": "days",
+    "by": "By",
+    "extendeal_process": "Extendeal Process",
+    "through": "through",
+    "through_extendeal": "through",
+    "through_mail": "through",
+    "extendeal": "Extendeal",
+    "mail": "mail",
+    "to_partner": "to supplier"
+  },
+  "entities": {
+    "supplier": "Supplier"
+  }
 }

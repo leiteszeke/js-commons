@@ -1,5 +1,3 @@
-// Dependencies
-const Sentry = require('@sentry/browser');
 // Helpers
 const { extend } = require('../objects');
 
@@ -64,22 +62,18 @@ module.exports = {
         return this.translate(search).length > 0;
     },
 
-    translate(search, options = {}) {
+    translate(search, params = {}) {
         this.getInstance();
         let translate = localeObject;
         const levels = search.split('.');
-        const { env, params } = options;
 
         levels.forEach( (value) => {
             if (typeof translate[value] === 'undefined') {
                 translate = '';
 
-                if (env === 'develop') {
-                    // eslint-disable-next-line
-                    console.warn(`"${ search }" has not translation for ${ this.getLocale() }`);
-                }
+                // eslint-disable-next-line
+                console.warn(`"${ search }" has not translation for ${ this.getLocale() }`);
 
-                Sentry.captureMessage(`"${ search }" has not translation for ${ this.getLocale() }`);
                 return;
             }
 
