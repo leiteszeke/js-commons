@@ -1,6 +1,3 @@
-// Helpers
-const { extend } = require('../objects');
-
 let localeObject = {};
 let language;
 
@@ -24,7 +21,7 @@ module.exports = {
         const locale = this.getLocale();
         const language = (locale.split("_"))[0];
 
-        localeObject = extend(true, langFiles[language], localeFiles[locale]);
+        localeObject = { ...langFiles[language], ...localeFiles[locale] };
     },
 
     setLanguage(lang) {
