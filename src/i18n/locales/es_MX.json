@@ -1,13 +1,21 @@
 {
   "country": {
-    "name": "Argentina",
-    "city": "C.A.B.A",
-    "state": "Buenos Aires",
-    "iso_code": "AR"
+    "name": "México",
+    "city": "Ciudad de México",
+    "state": "Ciudad de México",
+    "iso_code": "MX"
+  },
+  "company": {
+    "name": "Extendeal",
+    "sign": {
+      "address": "Hegel 228, Piso 6, Polanco, CDMX, México",
+      "email": "pedidos.mx@extendeal.com",
+      "phone": "+52 55 4444 4831"
+    }
   },
   "datetime": {
-    "timezone": "America/Argentina/Buenos_Aires",
-    "utc": -3
+    "timezone": "America/Mexico_City",
+    "utc": -5
   },
   "format": {
     "money": {

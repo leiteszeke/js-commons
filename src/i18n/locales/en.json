@@ -1,6 +1,7 @@
 {
   "actions": {
     "accept": "Accept",
+    "add_product": "Add product",
     "apply": "Apply",
     "approve": "Approve",
     "back": "Back",
@@ -45,6 +46,7 @@
     "reject": "Reject",
     "repeat": "Repeat",
     "repeat_order": "Repeat order",
+    "restore": "Restore",
     "retry": "Retry",
     "return": "Return",
     "send": "Send",
@@ -57,7 +59,13 @@
     "upload": "Upload",
     "validate": "Validate",
     "dont_show_again": "Do not show again",
-    "understood": "Understood"
+    "understood": "Understood",
+    "delink": "Delink",
+    "add": "Add",
+    "disable" :"Disable",
+    "enable" :"Enable",
+    "continue": "Continue",
+    "modify": "Modify"
   },
   "roles": {
     "moderator": "Moderator",
@@ -123,12 +131,14 @@
     "products": {
       "id": "ID",
       "family": "Family",
+      "partner_sku": "SKU (proveedor)",
       "name": "Name",
       "presentation": "Presentation",
       "sales_unit": "Sales unit",
       "brand": "Brand",
       "supplier": "Supplier",
       "partner": "Partner",
+      "price": "Precio",
       "base_price": "Product Price",
       "unit_price": "Unit price",
       "fractionable": "Fractionable",
@@ -175,6 +185,7 @@
     },
     "partner" : {
       "product_list_upload" : {
+        "validation_error" : "Error en validacion de lista de productos",
         "entities" : {
           "name" : "Product name",
           "unit_price" : "Unit price",
@@ -266,20 +277,6 @@
       }
     }
   },
-  "company": {
-    "name": "Extendeal",
-    "sign": {
-      "address": "9700 Collins Av. Suite 243, Florida, USA",
-      "email": "orders.us@extendeal.com",
-      "phone": "+1 305 742 9815"
-    }
-  },
-  "country": {
-    "name": "U.S.A",
-    "city": "Florida",
-    "state": "Miami",
-    "iso_code": "US"
-  },
   "errors": {
     "back": "Back",
     "not_found": {
@@ -300,6 +297,47 @@
       "try_again": "You have an outdated browser version. To continue you must update your browser.",
       "update": "Update",
       "back": "Back"
+    },
+    "price_list": {
+      "unique": "You have already created a price list with this name.",
+      "required": "Field %field% is required.",
+      "numeric": "%field% value should be numeric.",
+      "min": "Value must be greater or equal to %min%.",
+      "exists": "One or more of the selected clients are not enabled.",
+      "integer": "%field% value should be integer.",
+      "in_male": "Selected %field% does not exists.",
+      "in_female": "Selected %field% does not exists.",
+      "array": "%field% value should be an array"
+    },
+    "price_list_exception": {
+      "accessible_female": "You do not have permission to access this %resource%.",
+      "accessible_male": "You do not have permission to access this %resource%.",
+      "required": "Field %field% is required.",
+      "after": "The start date must be equal to or greater than today.",
+      "after_or_equal": "The final date must be equal to or greater than the initial date.",
+      "date": "The value must be a valid date.",
+      "date_format": "The date must have the format of YYYY-MM-DD.",
+      "date_ranges_overlap": "The exception could not be generated because the date ranges overlap with one or more previously configured exceptions. You must select a different date range.",
+      "numeric": "%field% value should be numeric.",
+      "min": "Value must be greater or equal to %min%."
+    },
+    "generics": {
+      "accessible_female": "You do not have permission to access this %resource%.",
+      "accessible_male": "You do not have permission to access this %resource%.",
+      "required": "Field %field% is required.",
+      "numeric": "%field% value should be numeric.",
+      "min": "Value must be greater or equal to %min%.",
+      "in_male": "Selected %field% does not exists.",
+      "in_female": "Selected %field% does not exists.",
+      "integer": "%field% value should be integer.",
+      "array": "%field% value should be an array",
+      "date_ranges_overlap": "The exception could not be generated because the date ranges overlap with one or more previously configured exceptions. You must select a different date range.",
+      "date_format": "The date must have the format of YYYY-MM-DD.",
+      "not_found": "The requested resource is not available.",
+      "not_authorized": "You are not authorized to perform this action.",
+      "bad_request": "The action you are trying to perform is not being used correctly.",
+      "error": "Error.",
+      "server_error": "An internal error has occurred, please try again."
     }
   },
   "files": {
@@ -317,6 +355,12 @@
         "xls": "Extendeal - Order #%order_number%.xls"
       },
       "title": "Extendeal - Order #%order_number%"
+    },
+    "price_list": {
+      "xls": "Extendeal - Price List - %name%.xlsx"
+    },
+    "product_list": {
+      "xls": "Extendeal - %name%'s Product List.xlsx"
     }
   },
   "summary": {
@@ -336,7 +380,11 @@
       "partner": "Partner",
       "plus_tax": "+ VAT",
       "status": "Status",
-      "total": "Total"
+      "total": "Total",
+      "client": "Client",
+      "zone": "Zone",
+      "actions": "Actions",
+      "responsable": "Responsable"
     },
     "tabs": {
       "all": "All orders",
@@ -347,7 +395,9 @@
         "dismissed": "Dismissed",
         "history": "History",
         "moderatable": "Pending",
-        "next": "Next deliveries"
+        "next": "Next deliveries",
+        "pending": "Pending",
+        "confirmed": "Next Deliveries"
       },
       "moderatable": "Pending moderation",
       "next": "Next deliveries",
@@ -357,7 +407,9 @@
         "deliveries-history": "Search by P.O. number, supplier or status...",
         "dismissed-deliveries": "Search by P.O. number, supplier or status...",
         "all-deliveries": "Search by P.O. number, supplier or status..."
-      }
+      },
+      "pending": "Pending moderation",
+      "confirmed": "Next deliveries"
     },
     "tooltip": {
       "approve": "Approve",
@@ -399,6 +451,10 @@
         "title": "Good job!",
         "message": "You have approved all the pending orders."
       },
+      "confirmed": {
+        "title": "You have no pending orders! Request products to your suppliers.",
+        "message": "Here you will see all the Purchase Orders with future delivery dates."
+      },
       "next": {
         "title": "You have no pending deliveries! Order products from your suppliers.",
         "message": "Here you will see all the Purchase Orders with future delivery dates."
@@ -409,7 +465,14 @@
       },
       "dismissed": {
         "title": "What effectiveness!",
-        "message": "Here you will find all the Purchase Orders that will not be delivered."
+        "message": "Here you will find all the Purchase Orders that will not be delivered.",
+        "min": {
+          "message": "Here you will find all the Purchase Orders that will not be delivered."
+        }
+      },
+      "new_provider": {
+        "title": "You do not have P.O. to moderate!",
+        "message": "Here ou will see all the purchase orders that customers request."
       },
       "all_fresh": {
         "title": "You have not ordered any products yet!",
@@ -423,7 +486,15 @@
     "orders_file_name": "Order list Extendeal",
     "requested_by": "Requested by",
     "requested_day": "Day",
-    "to_partners": "To Partners"
+    "to_partners": "To Partners",
+    "delivery_row": {
+      "manu-dropdown": {
+        "view_detail": "View detail",
+        "not_delivered": "Not delivered",
+        "download_pdf": "View PDF",
+        "download_excel": "Download XLS"
+      }
+    }
   },
   "invoices": {
     "address": "Address",
@@ -549,7 +620,10 @@
     "users": "Users",
     "validation": "Validation",
     "modify_order": "Modify",
-    "order_confirmation": "Order Confirmation"
+    "order_confirmation": "Order Confirmation",
+    "self_management": "Self managment",
+    "calendar": "Calendar",
+    "operations_plan": "Operations plan"
   },
   "statuses": {
     "cancelled": "Cancelled",
@@ -597,7 +671,48 @@
       "returned": "Returned",
       "validated": "Validated"
     },
-    "validated": "Validated"
+    "validated": "Validated",
+    "moderatable": "Pending",
+    "partner": {
+      "cancelled": "Cancelled",
+      "closed": "Closed",
+      "confirmed": "Confirmed",
+      "deleted": "Deleted",
+      "delivered": "Delivered",
+      "disapproved": "Disapproved",
+      "dispatched": "Dispatched",
+      "expired": "Expired",
+      "in_progress": "In progress",
+      "not_delivered": "Not delivered",
+      "opened": "Opened",
+      "ordered": "Received",
+      "read": "Read",
+      "rejected": "Rejected",
+      "requested": "Requested",
+      "returned": "Returned",
+      "sent": "Sent",
+      "shipped": "Shipped",
+      "moderatable": "Pending",
+      "validated": "Validated",
+      "actions": {
+        "requested": "Requested",
+        "expired": "Expired",
+        "disapproved": "Disapproved",
+        "dispatched": "Dispatched",
+        "modified": "Modified",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "ordered": "Received",
+        "read": "Read",
+        "confirmed": "Confirmed",
+        "cancelled": "Cancelled",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "not_delivered": "Not delivered",
+        "returned": "Returned",
+        "validated": "Validated"
+      }
+    }
   },
   "support": {
     "buttons": {
@@ -620,7 +735,18 @@
         "problems_with_client_users": "Problems with the interaction between moderator and requester of a client.",
         "problems_with_mails": "Problems in the mail to the cient with the delivery or order details.",
         "problems_with_products": "Problems with the display of products by the customer.",
-        "request_new_icons": "Generate design of new icons for families."
+        "request_new_icons": "Generate design of new icons for families.",
+        "partner": {
+          "problems_on_products_visualization": "Problems on products visualization.",
+          "problems_on_orders_visualization": "Problems to visualize Orders in \"Summary\".",
+          "cant_see_pending_approval_orders": "In \"pending moderation\" tab orders are not displayed.",
+          "cant_download_files": "Problems with Excel and/or PDF download.",
+          "cant_confirm_a_order": "I can't confirm a Purchase Order.",
+          "cant_reject_a_order": "I can't reject a Purchase Order.",
+          "how_to_change_my_password": "I want to know how to change my password.",
+          "cant_see_client_information": "I can't see client's info in the Purchase Order.",
+          "other": "Other."
+        }
       },
       "client": {
         "add_new_partner": "Add a new partner.",
@@ -1419,8 +1545,8 @@
     "address": "Address",
     "code": "Code",
     "email": "Email",
-    "name": "Nombre",
     "legal_name": "Legal Name",
+    "name": "Nombre",
     "utid": "SSN"
   },
   "delivery_point": {
@@ -1894,6 +2020,7 @@
   },
   "decimal_point": ".",
   "thousand_separator": ",",
+  "download_date": "Data do Download",
   "plus_tax": "+ VAT",
   "modals": {
     "alert_modal": {
@@ -1956,7 +2083,11 @@
       "fail": "<p>We are sorry, An error has happened while confirming the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
       "order_delivery": "Purchase Order",
       "title": "Confirm Purchase Order",
-      "total": "Total"
+      "total": "Total",
+      "title_mobile": "Confirm P.O.",
+      "success": "Your purchase order #%number% was validated succesfully.",
+      "success_mobile": "Your P.O. #%number% was validated succesfully.",
+      "fail_mobile": "<p>We are sorry, An error has happened while validating the P.O. #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>"
     },
     "disapprove_order": {
       "add_comment": "Add a comment",
@@ -2024,6 +2155,7 @@
       "order_delivery": "Purchase order",
       "client": "Client",
       "fail": "<p>We are sorry, An error has happened while rejecting the purchase order #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "partner": "Proveedor",
       "reason": "Reason:",
       "reason_1": "Stock lack.",
       "reason_2": "Delivery date.",
@@ -2031,7 +2163,17 @@
       "reason_4": "Other.",
       "success": "Your purchase order #%number% was rejected successfully.",
       "title": "Reject purchase order",
-      "total": "Total"
+      "total": "Total",
+      "title_mobile": "Reject P.O.",
+      "success_mobile": "Your P.O. #%number% was rejected succesfully.",
+      "fail_mobile": "<p>We are sorry, An error has happened while validating the P.O. #%number%.</p><p>Please try again or communicate with <a href='mailto:%support%'>%support%</a></p>",
+      "reasons": {
+        "reason0": "None",
+        "reason1": "Stock lack.",
+        "reason2": "Delivery date.",
+        "reason3": "Administrative issues (contact the supplier).",
+        "reason4": "Other."
+      }
     },
     "discard_order": {
       "title": "Discard order",
@@ -2071,7 +2213,114 @@
       "add_product": "Add Product",
       "add_error_message": "Sorry, an error occurred while adding the product to the Cart. Please try again."
     },
-    "tracking_number": "Tracking number"
+    "tracking_number": "Tracking number",
+    "add_product": {
+      "title": "Add product",
+      "message": "To add a new product to the list, contact <p><a href='mailto:%email%'>%email%</a></p>"
+    },
+    "leave_page": {
+      "title": "Discard changes",
+      "message": "The modifications in progress will be discarded, losing all the changes made in the list of products."
+    },
+    "linked_client_alert": {
+      "title": "Linked client",
+      "message": "The client %client% is linked to the price list %price_list%. <br>You must unlink it to assign it to the current list."
+    },
+    "multiple_linked_client_alert": {
+      "message": "There are several clients linked to price lists %clients%. <br>You must unlink them to assign them to the current list."
+    },
+    "add_exception": {
+      "title": "Add exception",
+      "message": "The exceptions are used to define a specific price of a product, these will have priorities over the established price list and will be defined for one or more customers during a given period of time."
+    },
+    "delete_product": {
+      "title": "Delete product",
+      "message": "Selected product will be removed."
+    },
+    "delete_exception": {
+      "title": "Delete exception",
+      "message": "The selected exception will be permanently deleted."
+    },
+    "create_exception_error": {
+      "title": "Add exception",
+      "message": "An error occurred while trying to save your changes."
+    },
+    "delete_exception_error": {
+      "title": "Delete exception",
+      "message": "An error occurred while trying to delete the exception."
+    },
+    "delete_exception_success": {
+      "title": "Delete exception",
+      "message": "The exception has been deleted correctly."
+    },
+    "update_price_list_success": {
+      "title": "Edit price list",
+      "message": "The price list has been saved correctly."
+    },
+    "update_price_list_error": {
+      "title": "Edit price list",
+      "message": "An error occurred while trying to save your changes."
+    },
+    "delete_price_list": {
+      "title": "Delete price list",
+      "message": "The selected list will be permanently deleted."
+    },
+    "delete_price_list_success": {
+      "title": "Delete price list",
+      "message": "The price list has been deleted correctly."
+    },
+    "delete_price_list_error": {
+      "title": "Delete price list",
+      "message": "An error occurred while trying to save your changes."
+    },
+    "create_exception_success": {
+      "title": "Add exception",
+      "message": "The exception has been added correctly."
+    },
+    "update_exception_success": {
+      "title": "Edit exception",
+      "message": "The exception has been edited correctly."
+    },
+    "update_products_success": {
+      "title": "Modify products",
+      "message": "The products have been modified correctly."
+    },
+    "create_price_list_success": {
+      "title": "New price list",
+      "message": "Your list has been added correctly."
+    },
+    "create_price_list_error": {
+      "title": "New price list",
+      "message": "An error occurred while trying to save your changes."
+    },
+    "update_products_error": {
+      "title": "Save changes",
+      "message": "Your products have been deleted, but we could not save the modified products."
+    },
+    "confirm_changes": {
+      "title": "Leave modification",
+      "message": "By continuing, you will lose the modifications made."
+    },
+    "discard_changes": {
+      "title": "Discard changes",
+      "message": "If you return changes made for the creation of new price list will be lost."
+    },
+    "change_password": {
+      "title": "Change Password",
+      "current_password": "Current Password",
+      "password": "Password",
+      "repeat_password": "Repeat Password",
+      "success": "Password changed successfully.",
+      "fail": "There was an error changing your password.",
+      "errors": {
+        "passwords_not_match": "Passwords do not match.",
+        "password_length_validate": "Must be at least 6 characters"
+      }
+    },
+    "logout": {
+      "title": "Session expired",
+      "message": "There has been no activity for 10 minutes or more. Please login again."
+    }
   },
   "loading": {
     "approving_order": "Approving Order...",
@@ -2104,7 +2353,14 @@
     "deleting_item_set": "Deleting...",
     "discarding": "Discarding...",
     "selecting_delivery_point": "Selecting Delivery Point...",
-    "delivery_detail": "Loading detail..."
+    "delivery_detail": "Loading detail...",
+    "changing_password": "Changing password...",
+    "detail": "Loading detail...",
+    "product_list": "Loading price list...",
+    "product_list_base": "Loading list of base products...",
+    "adding_exception": "Adding exception...",
+    "searching_exceptions": "Searching exceptions...",
+    "products_exceptions": "Loading products and applying exceptions..."
   },
   "delivery_point_sidebar": {
     "all": "All delivery points"
@@ -2190,9 +2446,216 @@
     "through_mail": "through",
     "extendeal": "Extendeal",
     "mail": "mail",
-    "to_partner": "to supplier"
+    "to_partner": "to supplier",
+    "all_female": "All",
+    "all_male": "All",
+    "total": "Total",
+    "reason": "Reason",
+    "privacy_policy": "Privacy Policy",
+    "terms_conditions": "Terms and Conditions",
+    "change_password": "Change Password",
+    "logout": "Logout",
+    "name": "Name",
+    "minimum_amount": "Minimum volume by order ($)",
+    "payment_method": "Select payment methods:",
+    "plus_tax": "+ TAX",
+    "unit_price": "Unit price",
+    "bulk_price": "Bulk price",
+    "bulk_price_by": "Bulk price",
+    "start_date": "Start date",
+    "end_date": "End date",
+    "received_quantity": "Received quantity",
+    "requested_quantity": "Requested quantity",
+    "requested_quantity_in_kg": "Requested quantity (in kg)",
+    "set_date": "Set date",
+    "subtotal": "Subtotal",
+    "type": "Type",
+    "new_list": "New list",
+    "clients": "Clients",
+    "exceptions": "Exceptions",
+    "payment_cond": "Paym. conditions",
+    "anonymous": "Anonymous",
+    "extendeal_operations": "Extendeal Operations",
+    "last_update": "Last update"
   },
   "entities": {
-    "supplier": "Supplier"
+    "supplier": "Supplier",
+    "client": "Client",
+    "clients": "Clients",
+    "delivery": "Order",
+    "order_delivery": "Delivery",
+    "base_price_list": "Base price list",
+    "price_list": "Price List",
+    "price_lists": "Price Lists",
+    "product": "Product",
+    "products": "Products",
+    "zone": "Zone",
+    "zones": "Zones"
+  },
+  "card": {
+    "reason": "Reason",
+    "comments": "Comments"
+  },
+  "date_picker": {
+    "locale_date": "en-gb",
+    "slash_placeholder": "-- / -- / --"
+  },
+  "delivery_log": {
+    "download_pdf": "View PDF"
+  },
+  "breadcrumbs": {
+    "summary": "Summary",
+    "management": "Management",
+    "price_list": "Price lists",
+    "detail": "Purchase Order %deliveryNumber% detail"
+  },
+  "management": {
+    "price_lists_base":"PRODUCTS BASE LIST",
+    "table": {
+      "product": "product",
+      "family": "family",
+      "unit_price": "unit price *",
+      "bulk_price": "bulk price *",
+      "available": "available",
+      "unit_price_mobile": "Unit price",
+      "bulk_price_mobile": "Bulk price"
+    }
+  },
+  "detail": {
+    "header": {
+      "delivery": "P.O",
+      "order_delivery": "Purchase Order",
+      "status": "Status",
+      "delivery_date": "Delivery Date",
+      "delivery_time": "Delivery Time",
+      "address": "Address",
+      "comments": "Comments"
+    },
+    "table": {
+      "bulk_price": "Bulk price",
+      "bulk_price_by": "Bulk price",
+      "product": "Product",
+      "products": "Products",
+      "qty_requested": "Req. quantity",
+      "qty_received": "Rec. quantity",
+      "quantity_requested": "Requested quantity",
+      "quantity_received": "Received quantity",
+      "subtotal": "Subtotal",
+      "unit_price": "Unit price",
+      "enable_product": "Enable product",
+      "delete_product": "Delete product"
+    },
+    "footer": {
+      "total": "Total",
+      "confirm": "Confirm",
+      "back": "Back",
+      "exit": "Exit"
+    },
+    "tabs": {
+      "details": "Detail",
+      "oc_activity": "P.O. activity",
+      "activity": "Activity",
+      "client": "Client",
+      "products": "Products",
+      "exceptions": "Exceptions",
+      "actual_exceptions": "Actual Exceptions",
+      "future_exceptions": "Future Exceptions",
+      "min": {
+        "actual_exceptions": "Act. Exceptions",
+        "future_exceptions": "Fut. Exceptions"
+      },
+      "clientTab": {
+        "client": "Client",
+        "address": "Address",
+        "utid": "UTID",
+        "contact_name": "Contact name",
+        "email": "Email",
+        "phone": "Phone"
+      }
+    }
+  },
+  "price_list_details": {
+    "table": {
+      "family": "Family",
+      "product": "Product",
+      "unit_price_base": "UNIT PRICE(base) *",
+      "bulk_price_base": "BULK PRICE(base) *",
+      "unit_price_percentage": "Unit price *",
+      "bulk_price_percentage": "Bulk price *"
+    },
+    "product_exceptions": {
+      "description": "The exceptions are used to define a specific price of a product, these will have priorities over the established price list and will be defined for one or more customers during a determined period of time.",
+      "select_product": "Select a product:",
+      "assign_price" : "Assign a price:",
+      "price_message" : "For fractionable products, only their price per package can be assigned, automatically calculating the unit price according to their presentation.",
+      "selected_product" : "Selected product:",
+      "selected_clients" : "Selected clients:",
+      "unit_price": "Unit price",
+      "bulk_price": "Bulk price",
+      "edit_exceptions": "Edit exceptions",
+      "edit_price": "Edit price",
+      "edit_date": "Edit dates",
+      "edit_dialog": {
+        "title": "Discard changes",
+        "text": "The changes made to modify the exception will be lost."
+      },
+      "add_dialog": {
+        "title": "Discard changes",
+        "text": "The changes made to create the exception will be lost"
+      }
+    }
+  },
+  "price_list_types": {
+    "hotels": "Hotels",
+    "catering": "Catering",
+    "restaurant": "Restaurant"
+  },
+  "payment_conditions": {
+    "15_days_of_date_of_invoice": "15 days since delivery date",
+    "30_days_of_date_of_invoice": "30 days since delivery date",
+    "60_days_of_date_of_invoice": "60 days since delivery date",
+    "90_days_of_date_of_invoice": "90 days since delivery date",
+    "120_days_of_date_of_invoice": "120 days since delivery date",
+    "cash_payment": "Cash payment"
+  },
+  "price_list": {
+    "view_detail": "View detail",
+    "new_list": "New list",
+    "create_list": "Create list",
+    "markup": "Markup over base list (%)",
+    "download_xls": "Download XLS",
+    "add_exception": "Add exception",
+    "audit": "%user% on the %date% at %time% hs.",
+    "margin_on_list": "Margin on base list (%)",
+    "zones_included": "Zones incluides on list:",
+    "select_clients": "Select the clients:",
+    "select_list_type": "Select list type:",
+    "exceptions": {
+      "empty": {
+        "title": "You have not yet defined exceptions!",
+        "body": "Here you will see all the products to which you have defined a specific price."
+      }
+    }
+  },
+  "product_list": {
+    "audit": "Last update at %date% by %name%"
+  },
+  "fine_print": {
+    "net_price_tax": "(*) Net price of taxes"
+  },
+  "modules": {
+    "sispro": {
+      "device_not_available": "We are sorry, this module is not available for this device at the moment."
+    }
+  },
+  "input_placeholders": {
+    "list_name": "List name"
+  },
+  "required_fields": {
+    "price_list_id": "Price list",
+    "clients": "Clients",
+    "product_id": "Product",
+    "base_price": "Bulk price",
+    "unit_price": "Unit price"
   }
 }

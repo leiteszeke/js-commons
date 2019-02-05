@@ -1,12 +1,20 @@
 {
   "country": {
-    "name": "Argentina",
-    "city": "C.A.B.A",
-    "state": "Buenos Aires",
-    "iso_code": "AR"
+    "name": "Chile",
+    "city": "Santiago",
+    "state": "Santiago",
+    "iso_code": "CL"
+  },
+  "company": {
+    "name": "Extendeal",
+    "sign": {
+      "address": "Bella Vista 1136, C.A.B.A, Argentina",
+      "email": "pedidos.ar@extendeal.com",
+      "phone": "+54 11 4588 0773"
+    }
   },
   "datetime": {
-    "timezone": "America/Argentina/Buenos_Aires",
+    "timezone": "America/Santiago",
     "utc": -3
   },
   "format": {
