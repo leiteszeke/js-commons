@@ -1,20 +1,28 @@
 {
   "country": {
-    "name": "Argentina",
-    "city": "C.A.B.A",
-    "state": "Buenos Aires",
-    "iso_code": "AR"
+    "name": "USA",
+    "city": "Florida",
+    "state": "Miami",
+    "iso_code": "US"
+  },
+  "company": {
+    "name": "Extendeal",
+    "sign": {
+      "address": "9700 Collins Av. Suite 243, Florida, USA",
+      "email": "orders.us@extendeal.com",
+      "phone": "+1 305 742 9815"
+    }
   },
   "datetime": {
-    "timezone": "America/Argentina/Buenos_Aires",
-    "utc": -3
+    "timezone": "America/New_York",
+    "utc": -4
   },
   "format": {
     "money": {
-      "currency": "$",
+      "currency": "US$",
       "decimals": 2,
-      "decimals_separator": ",",
-      "thousands_separator": ".",
+      "decimals_separator": ".",
+      "thousands_separator": ",",
       "regex": "0,0[.]000"
     }
   }

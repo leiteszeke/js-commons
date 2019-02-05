@@ -5,6 +5,14 @@
     "state": "Buenos Aires",
     "iso_code": "AR"
   },
+  "company": {
+    "name": "Extendeal",
+    "sign": {
+      "address": "Bella Vista 1136, C.A.B.A, Argentina",
+      "email": "pedidos.ar@extendeal.com",
+      "phone": "+54 11 4588 0773"
+    }
+  },
   "datetime": {
     "timezone": "America/Argentina/Buenos_Aires",
     "utc": -3

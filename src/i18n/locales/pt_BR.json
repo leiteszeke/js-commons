@@ -1,17 +1,25 @@
 {
   "country": {
-    "name": "Argentina",
-    "city": "C.A.B.A",
-    "state": "Buenos Aires",
-    "iso_code": "AR"
+    "name": "Brasil",
+    "city": "Sao Paulo",
+    "state": "Sao Paulo",
+    "iso_code": "BR"
+  },
+  "company": {
+    "name": "Extendeal",
+    "sign": {
+      "address": "Bella Vista 1136, C.A.B.A, Argentina",
+      "email": "pedidos.ar@extendeal.com",
+      "phone": "+54 11 4588 0773"
+    }
   },
   "datetime": {
-    "timezone": "America/Argentina/Buenos_Aires",
+    "timezone": "America/Sao_Paulo",
     "utc": -3
   },
   "format": {
     "money": {
-      "currency": "$",
+      "currency": "R$",
       "decimals": 2,
       "decimals_separator": ",",
       "thousands_separator": ".",
